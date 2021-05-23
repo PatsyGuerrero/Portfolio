@@ -1,3 +1,4 @@
+/* @import "./sassVariables/variables.scss"; */
 .App {
   text-align: center;
 
@@ -7,7 +8,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+h2{
+  font-family: "Prata", serif;
+}
 body{
   font-family: 'Montserrat',sans-serif;
   /* height: 100vw; */
