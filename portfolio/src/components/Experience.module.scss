@@ -1,0 +1,18 @@
+.container{
+    background-color:chocolate;
+    width: 50vw;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .iconos{
+        display:block;
+        width: 100%;
+        height: 40vh;
+        background-color: crimson;
+    }
+
+    
+}
