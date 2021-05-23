@@ -1,0 +1,38 @@
+.container{
+    background-color: red;
+    width: 50vw;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //margin-left: 12rem;
+
+    h1{
+        font-size: 5rem;
+        font-family: 'Open Sans ';
+        line-height:5rem;
+    }
+
+    .containerGrap{
+        background-color: lightblue;
+        width: 90%;
+        height: 90%;
+    }
+    .containerTitle{
+        width: fit-content;
+        background-color: blueviolet;
+        text-align: start;
+        
+    }
+    .containerDescription{
+        width: 50%;
+        background-color: rgb(130, 130, 223);
+        text-align: start;
+
+        span{
+            font-size: 1rem;
+            line-height: 1.8rem;
+        }
+                
+    }
+}

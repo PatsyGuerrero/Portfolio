@@ -2,7 +2,6 @@ import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Education from './components/Education';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
@@ -13,16 +12,15 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div >
+    <div className='App'>
       <Navbar/>
+      <Photo/>
       <Home/>
       <About/> 
       <Experience/>
       <Portfolio/>
-      <Education/>
       <Skills/>
       <Contact/>
-      <Photo/>
       <Dropbox/>
      
     </div>
