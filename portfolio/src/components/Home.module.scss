@@ -1,9 +1,54 @@
+@import "../sassVariables/variables.scss";
+
+@media (max-width: (map-get($breakpoints, small))) {
+    body {
+        background-color: salmon;
+    }
+    .container{
+        background-color: green !important;
+        width: 50vw;
+        height: 25rem !important;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-top: 4.2rem !important;
+        // z-index: 2;
+    }
+    .containerTitle{
+        width: 100% !important;
+        background-color: blueviolet;
+        text-align: start;
+        
+    }
+    .containerDescription{
+        width: 100% !important;
+        background-color: rgb(130, 130, 223);
+        text-align: start;
+
+        span{
+            font-size: 1rem;
+            line-height: 1rem !important;
+        }
+                
+    }
+    h1{
+        font-size: 1.5rem !important;
+        font-family: 'Open Sans ';
+        line-height: 1rem !important;
+    }
+}
+
+@media (min-width: (map-get($breakpoints, large))) {
+    body {
+        background-color: rgb(114, 218, 250);
+    }
+}
 .container{
     background-color: red;
     width: 50vw;
     height: 40rem;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     margin-top: 7vh;
 

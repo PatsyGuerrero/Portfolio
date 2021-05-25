@@ -3,7 +3,7 @@ import styles from './About.module.scss'
 
 const About = () => {
     return (
-        <section className={styles.container}>
+        <section className={styles.container}> 
             <div className={styles.containerGrap}>
                 <div className={styles.containerTitle}>
                     <h2>About</h2>

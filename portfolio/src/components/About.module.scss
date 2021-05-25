@@ -1,7 +1,23 @@
 // @import "vars";
+@import "../sassVariables/variables.scss";
 
+@media (max-width: (map-get($breakpoints, small))) {
+    body {
+        background-color: salmon;
+    }
+    .container{
+        background-color: green !important;
+        width: 50vw;
+        height: 25rem !important;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-top: 4.2rem !important;
+        // z-index: 2;
+    }
+}
 .container{
-    background-color:lightcoral;
+    background-color:lightcoral; 
     width: 50vw;
     height: 40rem;
     display: flex;

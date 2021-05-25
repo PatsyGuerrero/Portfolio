@@ -5,7 +5,7 @@ const Home = () => {
     return (
       <section className={styles.container}>
         <div className={styles.containerGrap}>
-          <div className={styles.containerTitle}>
+          <div className={styles.containerTitle}> 
             <h1>
               Hello
               <br/>

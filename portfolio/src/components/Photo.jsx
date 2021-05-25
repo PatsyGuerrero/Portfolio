@@ -6,9 +6,11 @@ const Photo = () => {
     return (
         <>
         <div className={styles.container}>
-            Photo
+            <div className={styles.photoContainer}>
+                Photo
+            </div>
+            <Download className={styles.download}/>
         </div>
-        <Download/>
         </>
     );
 };
