@@ -10,6 +10,7 @@ const Experience = () => {
                 </div>
                 <div className={styles.elements}>
                     <h1>Experience</h1>
+                    <div className={styles.line}></div>
                     <div className={styles.acordeon}> 
                         <Accordeon/>
                     </div>

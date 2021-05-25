@@ -10,7 +10,8 @@ const Accordion = () => {
 
     const eventHandler = (e, index) => {
         e.preventDefault();
-        setActive(index);
+        //setActive(index);
+        active===index? setActive(''):setActive(index);
     }
 
     const indexCount = (index) => {
@@ -34,6 +35,7 @@ const Accordion = () => {
                             >
                                 <span className={styles.titlewrapper}>{tab.title}
                                     <span className={ active === index  ? styles.plus : styles.minus}></span>
+                                    
                                 </span>  
                             </button>
                         </h3>
