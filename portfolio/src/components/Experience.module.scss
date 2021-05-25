@@ -1,17 +1,30 @@
 .container{
     background-color:chocolate;
     width: 50vw;
-    height: 40rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-
+    height: fit-content;
+   
     .iconos{
         display:block;
         width: 100%;
-        height: 40vh;
+        height: 30vh;
         background-color: crimson;
+    }
+
+    .elements{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 8rem;
+        margin-top: 3rem;
+
+
+        
+    
+        .acordeon{
+            width: 80%;
+            padding-bottom: 8rem;
+        }
     }
 
     
