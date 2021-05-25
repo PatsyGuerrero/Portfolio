@@ -1,3 +1,88 @@
-.container{
-    background-color:aqua;
+// @import "vars";
+@import "../sassVariables/variables.scss";
+
+@media (max-width: (map-get($breakpoints, small))) {
+    body {
+        background-color: salmon;
+    }
+    .container{
+        background-color: blue !important;
+        width: 50vw;
+        height: 25rem !important;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-top: 4.2rem !important;
+        // z-index: 2;
+    }
+    h2{
+        font-size: 1.5rem !important;
+        font-family: 'Open Sans ';
+        line-height: 1rem !important;
+    }
+    .containerFirstDescription{
+        width: 100% !important;
+        background-color: rgb(94, 107, 35);
+        text-align: start;
+        font-weight: 700;
+        .fristDescription{
+            span{
+                font-size: 1rem;
+                line-height: 1rem !important;
+            }
+        }
+                
+    }
 }
+// .container{
+//     background-color:lightcoral; 
+//     width: 50vw;
+//     height: 40rem;
+//     display: flex;
+//     justify-content: center;
+//     .containerGrap{
+//         width: 90%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         margin-bottom: 1rem;
+//         // align-items: center; 
+//     }
+//     .containerTitle{
+//         // align-self: flex-start;
+//         display: flex;
+//         justify-content: center;
+//         text-align: start;
+//         width: fit-content;
+//         margin: 0;
+//         // height: 5rem;
+//         background-color: red;
+//         // line-height: 5rem;
+//     }
+//     h2{
+//         background-color: lightcyan;
+//         font-size: 4rem;
+//     }
+//     .vl {
+//         border-left: 6px solid green;
+//         height: 5rem;
+//     }
+//     span{
+//         font-size: 1.3rem;
+//     }
+//     .containerFirstDescription{
+//         background-color: royalblue;
+//         text-align: start;
+//         .fristDescription{
+//             font-weight: 600;
+//             // background-color: salmon;
+//         }
+//     }
+//     .containerSecondDescription{
+//         background-color: red;
+//         text-align: start;
+//         // .secondDescription{
+//         //     // background-color: royalblue;
+//         // }
+//     }
+// }

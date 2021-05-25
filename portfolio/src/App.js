@@ -8,11 +8,11 @@ import Experience from './components/Experience';
 import Photo from './components/Photo';
 import Dropbox from './components/Dropbox';
 import Navbar from './components/Navbar';
-
+import styles from './App.module.scss'
 
 function App() {
   return (
-    <div className='App'>
+    <div className={styles.App}>
       <Navbar/>
       <Photo/>
       <Home/>
