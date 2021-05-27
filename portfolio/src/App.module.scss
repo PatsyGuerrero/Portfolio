@@ -1,38 +1,65 @@
 @import "./sassVariables/variables.scss";
 // @use "./sassVariables/variables.scss" as *; 
-.App {
-  text-align: center;  
-}
+// .App {
+//   text-align: center;  
+// }
   
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
 h2{
   font-family: "Prata", serif;
 }
-body{
-  font-family: 'Montserrat',sans-serif;
-  /* height: 100vw; */
-}
 
-section{
-  width: 50vw;
-}
-
-@media (max-width: (map-get($breakpoints, small))) {
+// body {
+//   background-color: salmon;
+//   // width: 50vw !important;
+//   // display: flex;
+//   // justify-content: center;
+//   .App{
+//     width: 100% !important;
+//     height: 100vh;
+//     background-color: chartreuse;
+//     // height: 95%;
+//     // background-color: red;
+//     // .Photo{
+//     //   background-color: blue !important;
+//     // }
+//   }
+// }
+@media (max-width: (map-get($breakpoints, medium))-1) {
   body {
       background-color: salmon;
+      width: 100vw;
+      // width: 50vw !important;
+      // display: flex;
+      // justify-content: center;
+      // section{
+      //   background-color: saddlebrown;
+      // }
+      .App{
+        // min-width: none;
+        width: 100% !important;
+        background-color: chartreuse;
+        min-height: 100vh;
+        // height: fit-content;
+        // height: 95%;
+        // background-color: red;
+        // .Photo{
+        //   background-color: blue !important;
+        // }
+      }
   }
 }
 
-@media (min-width: map-get($breakpoints, small)) and (max-width: (map-get($breakpoints, medium) - 1)) {
-  body {
-      background-color: lightseagreen;
-  }
-}
+// @media (min-width: map-get($breakpoints, small)) and (max-width: (map-get($breakpoints, medium) - 1)) {
+//   body {
+//       background-color: lightseagreen;
+//   }
+// }
 
-@media (min-width: map-get($breakpoints, medium)) and (max-width: (map-get($breakpoints, large) - 1)) {
+@media (min-width: map-get($breakpoints, medium)) {
   body {
       background-color: green;
   }
@@ -44,16 +71,16 @@ section{
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
 
 .App-link {
   color: #61dafb;
