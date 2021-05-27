@@ -1,5 +1,5 @@
 /* @import "./sassVariables/variables.scss"; */
-.App {
+/* .App {
   text-align: center;
 
 }
@@ -13,7 +13,6 @@ h2{
 }
 body{
   font-family: 'Montserrat',sans-serif;
-  /* height: 100vw; */
 }
 
 section{
@@ -48,4 +47,4 @@ section{
   to {
     transform: rotate(360deg);
   }
-}
+} */

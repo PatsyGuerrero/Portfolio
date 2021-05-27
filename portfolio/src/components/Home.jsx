@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './Home.module.scss';
+import Photo from './Photo';
 
 const Home = () => {
     return (
       <section className={styles.container}>
+        <Photo></Photo>
         <div className={styles.containerGrap}>
           <div className={styles.containerTitle}> 
             <h1>

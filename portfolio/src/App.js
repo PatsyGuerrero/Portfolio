@@ -13,11 +13,12 @@ import styles from './App.module.scss'
 function App() {
   return (
     <div className={styles.App}>
+      Apppppppppp
       <Navbar/>
-      <Photo/>
+      {/* <Photo /> */}
       <Home/>
       <About/> 
-      <Experience/>
+      <Experience/> 
       <Portfolio/>
       <Skills/>
       <Contact/>
