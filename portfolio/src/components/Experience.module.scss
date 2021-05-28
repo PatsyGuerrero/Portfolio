@@ -46,10 +46,10 @@
    
 }
 
-@media (min-width: (map-get($breakpoints, medium))) {
+@media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1) {
 
     .container{
-        background-color:#da1919;
+        background-color:#5068d1;
         width: $width-min-medium;
         height: fit-content;
         text-align: left;
@@ -60,7 +60,7 @@
             width: 100%;
             height: 30vh;
             //background-color: #003333;
-            background-color: #0ae4d2;
+            background-color: #e40ad9;
         }
     
         .elements{
@@ -94,50 +94,50 @@
 
 }
 
-// @media (min-width: (map-get($breakpoints, large))) {
-//     .container{
-//     background-color:#e4610a;
-//     // width: $width-min-medium;
-//     width: 110%;
-//     height: fit-content;
-//     text-align: left;
+@media (min-width: (map-get($breakpoints, large))) {
+    .container{
+    background-color:#3de40a;
+    width: $width-min-medium;
+    //width: 100%;
+    height: fit-content;
+    text-align: left;
    
-//     .iconos{
-//         display:block;
-//         width: 100%;
-//         height: 30vh;
-//         // background-color: #003333;
-//     }
+    .iconos{
+        display:block;
+        width: 100%;
+        height: 30vh;
+        // background-color: #003333;
+    }
 
-//     .elements{
-//         display: flex;
-//         justify-content: flex-start;
-//         align-items: flex-start;
-//         flex-direction: column;
-//         margin-left: 5rem;
-//         margin-right: 5rem;
-//         margin-top: 3rem;
+    .elements{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-top: 3rem;
 
-//         h1{
-//             font-family: 'Crimson Pro', serif;
-//             font-size: 3rem;
-//             color:#003333 ;
-//         }
+        h1{
+            font-family: 'Crimson Pro', serif;
+            font-size: 3rem;
+            color:#003333 ;
+        }
 
-//         .line {
-//             //width: 0.5rem;
-//             height: 6rem;           
-//             border-left: 0.15rem solid #003333;                   
-//         }
+        .line {
+            //width: 0.5rem;
+            height: 6rem;           
+            border-left: 0.15rem solid #003333;                   
+        }
 
-//         .acordeon{
-//             margin-top: 1.5rem;
-//             width: 100%;
-//             padding-bottom: 8rem;
-//         }
-//     }   
-//     }
-// }
+        .acordeon{
+            margin-top: 1.5rem;
+            width: 100%;
+            padding-bottom: 8rem;
+        }
+    }   
+    }
+}
 
 
 
