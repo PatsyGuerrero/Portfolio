@@ -5,24 +5,23 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Photo from './components/Photo';
 import Dropbox from './components/Dropbox';
 import Navbar from './components/Navbar';
-
+import styles from './App.module.scss'
 
 function App() {
   return (
-    <div className='App'>
+    <div className={styles.App}>
+      {/* Apppppppppp */}
       <Navbar/>
-      <Photo/>
       <Home/>
       <About/> 
-      <Experience/>
+      <Experience/> 
       <Portfolio/>
       <Skills/>
       <Contact/>
-      <Dropbox/>
-     
+      <Dropbox/> 
+    
     </div>
   );
 }

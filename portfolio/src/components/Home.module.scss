@@ -1,40 +1,120 @@
-.container{
-    background-color: red;
-    width: 50vw;
-    height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7vh;
+@import "../sassVariables/variables.scss";
 
-    //margin-left: 12rem;
-
-    h1{
-        font-size: 5rem;
-        font-family: 'Open Sans ';
-        line-height:5rem;
+@media (max-width: (map-get($breakpoints, medium))-1) {
+    .container{
+        background-color: $primary-color;
+        // background-color: plum;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 1.5rem;
+        padding-left: 0.5rem;
+        .containerTitle{
+            width: 100% ;
+            background-color: blueviolet;
+            text-align: start;
+            h1{
+                font-size: 3rem ;
+                font-family: 'Open Sans ';
+                line-height: 3rem ;
+            }
+        }
+        .containerDescription{
+            width: 100%;
+            max-width: 20rem ;
+            background-color: rgb(130, 130, 223);
+            text-align: start;
+    
+            span{
+                // background-color: brown;
+                font-size: 0.8rem ;
+                line-height: -1.3rem;
+            }
+                    
+        }
     }
+    
+}
 
-    .containerGrap{
-        background-color: lightblue;
-        width: 90%;
-        height: 90%;
+@media (min-width: (map-get($breakpoints, medium))) {
+    .container{
+        background-color: blue;
+        width: 60vw;
+        height: 25rem ;
+        // position: absolute;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        // top: 10px;
+        // margin-top: $height-navbar;
+        // padding-right: 3rem;
+        padding-bottom: 1.5rem;
+        // z-index: 99;
     }
     .containerTitle{
-        width: fit-content;
+        width: 100% ;
         background-color: blueviolet;
         text-align: start;
-        
     }
     .containerDescription{
-        width: 50%;
+        width: 100%;
+        max-width: 30rem;
         background-color: rgb(130, 130, 223);
         text-align: start;
 
         span{
-            font-size: 1rem;
-            line-height: 1.8rem;
+            font-size: 0.8rem ;
+            line-height: 1rem ;
         }
                 
     }
+    h1{
+        font-size: 5rem;
+        font-family: 'Open Sans ';
+        line-height: 4rem;
+    }
 }
+
+// @media (min-width: (map-get($breakpoints, large))) {
+//     body {
+//         background-color: rgb(114, 218, 250);
+//     }
+//     .container{
+//         background-color: red;
+//         width: 50vw;
+//         height: 40rem;
+//         display: flex;
+//         justify-content: center; 
+//         align-items: center;
+//         margin-top: 7vh;
+//         //margin-left: 12rem; 
+    
+//         h1{
+//             font-size: 5rem;
+//             font-family: 'Open Sans ';
+//             line-height:5rem;
+//         }
+    
+//         .containerGrap{
+//             background-color: lightblue;
+//             width: 90%;
+//             height: 90%;
+//         }
+//         .containerTitle{
+//             width: fit-content;
+//             background-color: blueviolet;
+//             text-align: start;
+            
+//         }
+//         .containerDescription{
+//             width: 50%;
+//             background-color: rgb(130, 130, 223);
+//             text-align: start;
+    
+//             span{
+//                 font-size: 1rem;
+//                 line-height: 1.8rem;
+//             }
+                    
+//         }
+//     }
+// }

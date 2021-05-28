@@ -1,8 +1,8 @@
 import React from 'react';
-
+import styles from './Download.module.scss'
 const Download = () => {
     return (
-        <div>
+        <div className={styles.containerDownload}>
             Download
         </div>
     );

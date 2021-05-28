@@ -1,0 +1,141 @@
+//@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+@import "../sassVariables/variables.scss";
+
+@media (max-width: (map-get($breakpoints, medium ))-1) {
+    .container{
+        background-color:#ffffff;
+        width: 100%;
+        height: fit-content;
+        text-align: left;
+       
+        .iconos{
+            display:block;
+            width: 100%;
+            height: 80vh;
+            background-color: #003333;
+        }
+    
+        .elements{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 1rem;
+            margin-right: 1.5rem;
+            margin-top: 0.1rem;
+    
+            h1{
+                font-family: 'Crimson Pro', serif;
+                font-size: 3rem;
+                color:#003333 ;
+            }
+    
+            .line {
+                //width: 0.5rem;
+                height: 3.5rem;           
+                border-left: 0.15rem solid #003333;                   
+            }
+    
+            .acordeon{
+                margin-top: 1.5rem;
+                width: 98%;
+                padding-bottom: 3rem;
+            }
+        }   
+        }
+   
+}
+
+@media (min-width: (map-get($breakpoints, medium))) {
+
+    .container{
+        background-color:#da1919;
+        width: 60vw;
+        height: fit-content;
+        text-align: left;
+       
+        .iconos{
+            display:block;
+            width: 100%;
+            height: 30vh;
+            //background-color: #003333;
+            background-color: #0ae4d2;
+        }
+    
+        .elements{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-top: 3rem;
+    
+            h1{
+                font-family: 'Crimson Pro', serif;
+                font-size: 3rem;
+                color:#003333 ;
+            }
+    
+            .line {
+                //width: 0.5rem;
+                height: 6rem;           
+                border-left: 0.15rem solid #003333;                   
+            }
+    
+            .acordeon{
+                margin-top: 1.5rem;
+                width: 100%;
+                padding-bottom: 8rem;
+            }
+        }   
+        }
+
+}
+
+@media (min-width: (map-get($breakpoints, large))) {
+    .container{
+    background-color:#e4610a;
+    width: 60vw;
+    height: fit-content;
+    text-align: left;
+   
+    .iconos{
+        display:block;
+        width: 100%;
+        height: 30vh;
+        background-color: #003333;
+    }
+
+    .elements{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-top: 3rem;
+
+        h1{
+            font-family: 'Crimson Pro', serif;
+            font-size: 3rem;
+            color:#003333 ;
+        }
+
+        .line {
+            //width: 0.5rem;
+            height: 6rem;           
+            border-left: 0.15rem solid #003333;                   
+        }
+
+        .acordeon{
+            margin-top: 1.5rem;
+            width: 100%;
+            padding-bottom: 8rem;
+        }
+    }   
+    }
+}
+
+
+
