@@ -31,6 +31,12 @@ $primary-color: #052123;
 $height-container-photo: 25rem;
 // variable para el alto de la navbar
 $height-navbar: 5rem;
+// variable para el margen izquierdo de componentes en vista mobile
+$padding-base-mobile: 1.5rem;
+$padding-base-medium: 3rem;
+$padding-base-large: 5rem;
+// ancho de los componenetes
+$width-min-medium: 60vw;
 
 @mixin element-label-focus {
     color: #377D6A;

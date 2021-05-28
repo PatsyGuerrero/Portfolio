@@ -4,7 +4,6 @@ import Accordeon from './Accordion'
 const Experience = () => {
     return (
         <section className={styles.container}>
-            
                 <div className={styles.iconos}>
                     Iconos
                 </div>
