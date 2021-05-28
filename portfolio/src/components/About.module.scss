@@ -57,29 +57,43 @@
     }
 }
 
-@media (min-width: (map-get($breakpoints, medium))) {
+@media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1){
     // body {
     //     background-color: salmon;
     // }
     .container{
         background-color: blue;
-        padding-left: $padding-base-medium; 
-        // width: 100vw;
-        // height: fit-content;
-        // display: flex;
+        width: $width-min-medium ;
+        height: 25rem ;
+        // position: absolute;
+        display: flex;
         // justify-content: center; 
         // align-items: center;
-        // padding-left: $padding-base-mobile;
-        // padding-bottom: 2rem;
-        // // margin-top: 4.2rem !important;
-        // // z-index: 2;
-        // .vl {
-        //     border-left: 3px solid green;
-        //     height: 3rem;
-        //     margin: 0 0 1rem 0;
-        // }
+        // top: 10px;
+        // margin-top: $height-navbar;
+        padding-left: $padding-base-medium;
+        padding-bottom: 1.5rem;
+        // z-index: 99;
     }
 }
+
+@media (min-width: (map-get($breakpoints, large))) {
+    .container{
+        background-color: blue;
+        width: $width-min-medium ;
+        height: 25rem ;
+        // position: absolute;
+        display: flex;
+        // justify-content: center; 
+        // align-items: center;
+        // top: 10px;
+        // margin-top: $height-navbar;
+        padding-left: $padding-base-large;
+        padding-bottom: 1.5rem;
+        // z-index: 99;
+    }
+}
+
 // .container{
 //     background-color:lightcoral; 
 //     width: 50vw;
