@@ -12,17 +12,25 @@
         display: flex;
         justify-content: center; 
         align-items: center;
+        padding-left: 0.5rem;
+        padding-bottom: 2rem;
         // margin-top: 4.2rem !important;
         // z-index: 2;
+        .vl {
+            border-left: 3px solid green;
+            height: 3rem;
+            margin: 0 0 1rem 0;
+        }
     }
     .containerGrap{
         // height: 25rem;
         .containerTitle{
+            // background-color: blueviolet;
             background-color: red;
             h2{
-                font-size: 1.5rem;
+                font-size: 3rem;
                 font-family: 'Open Sans ';
-                line-height: 1rem;
+                // line-height: 3rem;
             }
         }
         .containerFirstDescription{
@@ -30,6 +38,7 @@
             background-color: rgb(94, 107, 35);
             text-align: start;
             font-weight: 700;
+            margin-bottom: 1rem;
             .fristDescription{
                 span{
                     font-size: 1rem;
