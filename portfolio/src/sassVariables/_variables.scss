@@ -29,6 +29,8 @@ $padding-base: 8px 10px !default;
 $primary-color: #052123;
 // variables nuevas
 $height-container-photo: 25rem;
+// variable para el alto de la navbar
+$height-navbar: 5rem;
 
 @mixin element-label-focus {
     color: #377D6A;
@@ -103,5 +105,5 @@ $breakpoints: (
     small: 380px,
     medium: 767px,
     large: 1025px,
-    xl: 1360px,
+    xl: 1300px,
 )
