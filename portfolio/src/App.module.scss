@@ -61,9 +61,19 @@ h2{
 
 @media (min-width: map-get($breakpoints, medium)) {
   body {
-      background-color: green;
+      background-color: rgb(236, 167, 17);
+      width: 100vw;
   }
+
+  .App{
+    width: 50% !important;
+    // display: flex;
+    // justify-content: center;
+  }
+     
+
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

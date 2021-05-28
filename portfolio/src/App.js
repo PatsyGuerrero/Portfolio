@@ -16,14 +16,14 @@ function App() {
       Apppppppppp
       <Navbar/>
       {/* <Photo /> */}
-      <Home/>
-      <About/> 
+       <Home/>
+       <About/> 
       <Experience/> 
       <Portfolio/>
       <Skills/>
       <Contact/>
-      <Dropbox/>
-     
+      <Dropbox/> 
+    
     </div>
   );
 }
