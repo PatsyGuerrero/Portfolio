@@ -7,7 +7,7 @@
         width: 100%;
         height: fit-content;
         padding-bottom: 1.5rem;
-        padding-left: 0.5rem;
+        padding-left: $padding-base-mobile;
         .containerTitle{
             width: 100% ;
             background-color: blueviolet;
@@ -38,7 +38,7 @@
 @media (min-width: (map-get($breakpoints, medium))) {
     .container{
         background-color: blue;
-        width: 60vw;
+        width: $width-min-medium;
         height: 25rem ;
         // position: absolute;
         display: flex;
@@ -46,7 +46,7 @@
         // align-items: center;
         // top: 10px;
         // margin-top: $height-navbar;
-        // padding-right: 3rem;
+        padding-left: $padding-base-medium;
         padding-bottom: 1.5rem;
         // z-index: 99;
     }
