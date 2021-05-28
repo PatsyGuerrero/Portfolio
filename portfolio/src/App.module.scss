@@ -1,33 +1,13 @@
 @import "./sassVariables/variables.scss";
 // @use "./sassVariables/variables.scss" as *; 
-// .App {
-//   text-align: center;  
-// }
-  
-// .App-logo {
-//   height: 40vmin;
-//   pointer-events: none;
-// }
+
 h2{
   font-family: "Prata", serif;
 }
+.App{
+  padding-top: $height-navbar;
+}
 
-// body {
-//   background-color: salmon;
-//   // width: 50vw !important;
-//   // display: flex;
-//   // justify-content: center;
-//   .App{
-//     width: 100% !important;
-//     height: 100vh;
-//     background-color: chartreuse;
-//     // height: 95%;
-//     // background-color: red;
-//     // .Photo{
-//     //   background-color: blue !important;
-//     // }
-//   }
-// }
 @media (max-width: (map-get($breakpoints, medium))-1) {
   body {
       background-color: salmon;
@@ -43,6 +23,7 @@ h2{
         width: 100% !important;
         background-color: chartreuse;
         min-height: 100vh;
+        // padding-top: $height-navbar;
         // height: fit-content;
         // height: 95%;
         // background-color: red;
@@ -53,17 +34,21 @@ h2{
   }
 }
 
+@media (min-width: (map-get($breakpoints, medium))) {
+  
+}
+
 // @media (min-width: map-get($breakpoints, small)) and (max-width: (map-get($breakpoints, medium) - 1)) {
 //   body {
 //       background-color: lightseagreen;
 //   }
 // }
 
-@media (min-width: map-get($breakpoints, medium)) {
-  body {
-      background-color: green;
-  }
-}
+// @media (min-width: map-get($breakpoints, medium)) {
+//   body {
+//       background-color: green;
+//   }
+// }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

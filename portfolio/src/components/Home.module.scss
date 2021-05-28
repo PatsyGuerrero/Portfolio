@@ -3,6 +3,7 @@
 @media (max-width: (map-get($breakpoints, medium))-1) {
     .container{
         background-color: $primary-color;
+        // background-color: plum;
         width: 100%;
         height: fit-content;
         padding-bottom: 1.5rem;
@@ -35,28 +36,28 @@
 }
 
 @media (min-width: (map-get($breakpoints, medium))) {
-    body {
-        background-color: salmon;
-    }
     .container{
         background-color: blue;
         width: 60vw;
         height: 25rem ;
+        // position: absolute;
         display: flex;
         justify-content: center; 
         align-items: center;
-        margin-top: 4.2rem ;
+        // top: 10px;
+        // margin-top: $height-navbar;
         // padding-right: 3rem;
-        // z-index: 2;
+        padding-bottom: 1.5rem;
+        // z-index: 99;
     }
     .containerTitle{
         width: 100% ;
         background-color: blueviolet;
         text-align: start;
-        
     }
     .containerDescription{
-        width: 100% ;
+        width: 100%;
+        max-width: 30rem;
         background-color: rgb(130, 130, 223);
         text-align: start;
 
@@ -67,9 +68,9 @@
                 
     }
     h1{
-        font-size: 1.5rem ;
+        font-size: 5rem;
         font-family: 'Open Sans ';
-        line-height: 1rem ;
+        line-height: 4rem;
     }
 }
 
