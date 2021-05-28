@@ -14,14 +14,20 @@ function App() {
     <div className={styles.App}>
       {/* Apppppppppp */}
       <Navbar/>
+<<<<<<< HEAD
       <Home/>
       <About/> 
+=======
+      {/* <Photo /> */}
+       <Home/>
+       <About/> 
+>>>>>>> origin/experience
       <Experience/> 
       <Portfolio/>
       <Skills/>
       <Contact/>
-      <Dropbox/>
-     
+      <Dropbox/> 
+    
     </div>
   );
 }
