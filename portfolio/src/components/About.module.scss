@@ -1,7 +1,7 @@
 // @import "vars";
 @import "../sassVariables/variables.scss";
 
-@media (max-width: (map-get($breakpoints, small))) {
+@media (max-width: (map-get($breakpoints, medium))) {
     body {
         background-color: salmon;
     }
@@ -33,21 +33,25 @@
                 // line-height: 3rem;
             }
         }
+        .containerFirstDescription , .containerSecondDescription{
+            font-size: 1.3rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;;
+        }
         .containerFirstDescription{
-            width: 100%;
+            width: 90%;
             background-color: rgb(94, 107, 35);
             text-align: start;
             font-weight: 700;
             margin-bottom: 1rem;
             .fristDescription{
                 span{
-                    font-size: 1rem;
                     line-height: 1rem;
                 }
             }
                     
         }
         .containerSecondDescription{
+            // width: 98%;
             background-color: seagreen;
         }
     }

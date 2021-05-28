@@ -46,16 +46,21 @@ $height-download : 3rem;
     .container{
         // width: 30vw !important;
         background-color: #17cc26;
-        width: 50vw;
+        width: 40vw;
         height: 40rem;
         margin-top: 10vh;
-        margin-left: 50vw;
+        margin-left: 100vw;
         position: fixed;
+        padding-right: 2rem;
         .photoContainer{
-            background-color: green ;
+            // background-color: green ;
             width: 100% ;
             height: $height-container-photo - $height-download ;
             margin: auto;
+            .photo{
+                background-color: blue;
+                text-align: end;
+            }
             // width: 100%;
         }
         .download{
