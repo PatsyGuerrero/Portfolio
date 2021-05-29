@@ -1,32 +1,40 @@
 @import "../sassVariables/variables.scss";
+.container{
+    h1 , span{
+        color: $color-text-primary;
+    }
+    background-color: $primary-color;
+    height: fit-content;
+    padding-bottom: $padding-bottom-component;
+    .containerTitle{
+        width: 100% ;
+        text-align: start;
+        h1{
+            font-family: 'Open Sans ';
+        }
+
+    }
+    .containerDescription{
+        z-index: 99;
+        text-align: start;
+    }
+}
 
 @media (max-width: (map-get($breakpoints, medium))-1) {
     .container{
-        background-color: $primary-color;
-        // background-color: plum;
         width: 100%;
-        height: fit-content;
-        padding-bottom: 1.5rem;
         padding-left: $padding-base-mobile;
         .containerTitle{
-            width: 100% ;
-            background-color: blueviolet;
-            text-align: start;
             h1{
-                font-size: 3rem ;
-                font-family: 'Open Sans ';
-                line-height: 3rem ;
+                font-size: $h1-title-mobile;
+                line-height: $h1-title-mobile;
             }
         }
         .containerDescription{
-            width: 100%;
-            max-width: 20rem ;
-            background-color: rgb(130, 130, 223);
-            text-align: start;
-    
+            width: 90vw;
+            max-width: $max-width-container-description-mobile;
             span{
-                // background-color: brown;
-                font-size: 0.8rem ;
+                font-size: $font-size-home-span;
                 line-height: -1.3rem;
             }
                     
@@ -37,46 +45,25 @@
 
 @media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1) {
     .container{
-        background-color: blue;
         width: $width-min-medium ;
-        height: 25rem ;
-        // position: absolute;
         display: flex;
-        // justify-content: center; 
-        // align-items: center;
-        // top: 10px;
-        // margin-top: $height-navbar;
         padding-left: $padding-base-medium;
-        padding-bottom: 1.5rem;
-        // z-index: 99;
     }
-
-    
-        .containerTitle{
-            width: 100% ;
-            background-color: blueviolet;
-            text-align: start;
-        }
-        .containerDescription{
-            width: 100%;
-            max-width: 30rem;
-            background-color: rgb(130, 130, 223);
-            text-align: start;
-    
-            span{
-                font-size: 0.8rem ;
-                line-height: 1rem ;
-            }
-                    
-        }
+    .containerTitle{
         h1{
-            font-size: 5rem;
-            font-family: 'Open Sans ';
-            line-height: 4rem;
+            font-size: $h1-title-large;
+            line-height: $h1-title-large - 1rem;
         }
-
-    
-    
+    }
+    .containerDescription{
+        width: 100%;
+        max-width: $max-width-container-description-large;
+        span{
+            font-size: $font-size-home-span ;
+            line-height: 1.3rem ;
+        }
+                
+    }
 }
 
 @media (min-width: (map-get($breakpoints, large))) {
@@ -84,39 +71,24 @@
         background-color: rgb(114, 218, 250);
     }
     .container{
-        background-color: blue;
-        width: $width-min-medium ;
-        height: 25rem ;
-        // position: absolute;
+        width: $width-min-medium;
         display: flex;
-        // justify-content: center; 
-        // align-items: center;
-        // top: 10px;
-        // margin-top: $height-navbar;
         padding-left: $padding-base-large;
-        padding-bottom: 1.5rem;
-        // z-index: 99;
     }
     .containerTitle{
-        width: 100% ;
-        background-color: blueviolet;
-        text-align: start;
+        h1{
+            font-size: $h1-title-large;
+            line-height: $h1-title-large - 1rem;
+        }
     }
+    
     .containerDescription{
         width: 100%;
-        max-width: 30rem;
-        background-color: rgb(130, 130, 223);
-        text-align: start;
-
+        max-width: $max-width-container-description-large;
         span{
-            font-size: 0.8rem ;
-            line-height: 1rem ;
+            font-size: $font-size-home-span;
+            line-height: 1.3rem ;
         }
                 
-    }
-    h1{
-        font-size: 5rem;
-        font-family: 'Open Sans ';
-        line-height: 4rem;
     }
 }

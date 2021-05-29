@@ -26,7 +26,6 @@ $margin-top: 5rem;
 $box-shadow-base : rgba(0, 0, 0, 0.35) 0px 5px 15px;
 $box-shadow-button: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 $padding-base: 8px 10px !default;
-$primary-color: #052123;
 // variables nuevas
 $height-container-photo: 25rem;
 // variable para el alto de la navbar
@@ -37,6 +36,16 @@ $padding-base-medium: 3rem;
 $padding-base-large: 5rem;
 // ancho de los componenetes
 $width-min-medium: 60vw;
+// 
+$font-size-home-span: 1.2rem;
+$padding-bottom-component: 4rem;
+// 
+$h1-title-mobile: 3rem;
+$h1-title-large: 5rem;
+$max-width-container-description-mobile: 25rem;
+$max-width-container-description-large: 35rem;
+$color-text-primary: #fff4e0;
+$primary-color: #052123;
 
 @mixin element-label-focus {
     color: #377D6A;
