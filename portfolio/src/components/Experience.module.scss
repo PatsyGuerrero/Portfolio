@@ -7,12 +7,14 @@
         width: 100%;
         height: fit-content;
         text-align: left;
-       
+        padding-left: $padding-base-mobile;
         .iconos{
             display:block;
             width: 100%;
             height: 80vh;
-            background-color: #003333;
+            background-color: $primary-color;
+            margin-left: -$padding-base-mobile;
+            padding-right: $padding-base-mobile;
         }
     
         .elements{
@@ -20,7 +22,7 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            margin-left: $padding-base-mobile;
+            // margin-left: $padding-base-mobile;
             margin-right: 1.5rem;
             margin-top: 0.1rem;
     
@@ -60,6 +62,8 @@
             width: 100%;
             height: 30vh;
             //background-color: #003333;
+            margin-left: -$padding-base-medium;
+            padding-right: $padding-base-medium;
             background-color: #0ae4d2;
         }
     
@@ -68,7 +72,7 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            margin-left: 3rem;
+            // margin-left: 3rem;
             margin-right: 3rem;
             margin-top: 3rem;
     
@@ -106,7 +110,9 @@
         display:block;
         width: 100%;
         height: 30vh;
-        // background-color: #003333;
+        margin-left: -$padding-base-large;
+        padding-right: $padding-base-large;
+        background-color: #003333;
     }
 
     .elements{
@@ -114,7 +120,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        margin-left: 5rem;
+        // margin-left: 5rem;
         margin-right: 5rem;
         margin-top: 3rem;
 
