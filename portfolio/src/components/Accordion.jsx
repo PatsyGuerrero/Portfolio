@@ -23,7 +23,7 @@ const Accordion = () => {
         <>
             <form>     
                 { data.map((tab, index) => (
-                    <div key={index}>
+                    <div key={index} className={styles.deslizar}>
                         <h3>
                             <button 
                                 onClick={(e) => eventHandler(e, index)}
