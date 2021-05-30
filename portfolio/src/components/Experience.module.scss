@@ -54,7 +54,7 @@
 @media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1) {
 
     .container{
-        // background-color:#da1919;
+        background-color:#5068d1;
         width: $width-min-medium;
         height: fit-content;
         text-align: left;
@@ -103,7 +103,7 @@
 
 @media (min-width: (map-get($breakpoints, large))) {
     .container{
-    // background-color:#e4610a;
+    background-color:aliceblue;
     width: $width-min-medium;
     // width: 110%;
     height: fit-content;
