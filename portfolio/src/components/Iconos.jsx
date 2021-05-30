@@ -1,4 +1,4 @@
-import React, {Component, useRef}from 'react';
+import React, { useRef } from 'react';
 import * as THREE from 'three';
 // const doc = window.document;
 // class Iconos extends Component {
@@ -32,19 +32,20 @@ import * as THREE from 'three';
 //   }
 function Iconos () {
     let mount = useRef(null);
-    // contenerdor de los iconos
-    // const iconosContainer = document.getElementsByClassName('holaa')[0];
-    // import * as THREE from 'three';
-    const t = 0;
+    const color3 = new THREE.Color("rgb(255, 255, 0)");
+    // ************************
     const scene = new THREE.Scene();
+    scene.background = {color: color3}
     // const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000 );
-    const camera = new THREE.PerspectiveCamera( 45, 1, 0.1, 1000 );
-    const renderer = new THREE.WebGLRenderer();
+    const camera = new THREE.PerspectiveCamera( 20, 1, 0.1, 1000 );
+    const renderer = new THREE.WebGLRenderer( {alpha : 0.2});
+    renderer.clear(true, false, false);
+    renderer.setClearAlpha ( 0.0 );
+    renderer.setClearColor ( {color : 0x00ff00 })
     renderer.setSize( 200, 200 );
-    const elem = useRef(null);
     console.log(window.innerWidth, 'tttt')
     const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+    const material = new THREE.MeshBasicMaterial( { color: 0x00ff00, transparent: true } );
     const cube = new THREE.Mesh( geometry, material );
     scene.add( cube );
     camera.position.z = 5;
@@ -59,6 +60,9 @@ function Iconos () {
     React.useEffect(() => {
         // const myDiv = document.createElement("div");
         // var newContent = document.createTextNode("Hola!¿Qué tal?");
+        renderer.autoClear = true;
+        renderer.info.autoReset = false;
+        renderer.info.reset();
         try{
             mount.removeChild(renderer.domElement)
         }catch(e){

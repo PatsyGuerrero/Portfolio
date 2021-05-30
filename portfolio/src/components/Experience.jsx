@@ -3,6 +3,7 @@ import styles from './Experience.module.scss';
 import Accordeon from './Accordion';
 
 import Iconos from './Iconos';
+import Images from './Images';
 
 const Experience = () => {
     return (
@@ -10,7 +11,8 @@ const Experience = () => {
                 <div className={styles.iconos}>
                     <div className='holaa'></div>
                     Iconos
-                    <Iconos/>
+                    {/* <Iconos/> */}
+                    <Images/>
                 </div>
                 <div className={styles.elements}>
                     <h1>Experience</h1>
