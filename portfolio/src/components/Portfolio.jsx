@@ -1,13 +1,10 @@
 import React from 'react';
 import styles from './Portfolio.module.scss';
 import data from '../projects.json';
-import logo from '../assets/img/dribble.jpg'; 
 
 
 
 const Portfolio = () => {
-
-    let url='../assets/img/dribble.jpg';
 
     return (
         <section className={styles.container}>
@@ -23,18 +20,32 @@ const Portfolio = () => {
                         <span>{e.description}</span>
                     </div>
                     <div className={styles.botones}>
-                        <button> DEMO </button>
-                        <button className={styles.repo}> REPOSITORIO </button>
+                        <button> <a href={e.deploy} target="_blank" rel="noreferrer">DEMO </a> </button>
+                        <button className={styles.repo}> <a href={e.github} target="_blank" rel="noreferrer">REPOSITORIO </a></button>
                     </div>
                </div>
-               <div className={styles.imagen}>
+              
                    {/* <img src={require(`./${e.img}`).default}  alt="no se encuentra"  /> */}
 
                    {/* {typeof `e.img` } */}
-                   
-                   <img src={require(`../assets/img/${e.img}`).default}  alt="no se encuentra"  />
-                   
-               </div>
+                { e.img !== ""?
+                     <div className={styles.imagen}>
+                    <img src={require(`../assets/img/${e.img}`).default}  alt="no se encuentra"  />
+                    </div>: <div className={styles.imagen}>
+                        <video controls>
+                            <source src={require('../assets/img/codebakery_ecommerce.mp4').default} type="video/mp4"/>
+                        </video>
+                    
+                    </div>
+                
+                
+                    // <video width="100%" height="auto" controls >
+                    //     <source src={e.video} type="video/mp4"/>
+                    // </video>
+                
+                }
+    
+               
            </div>
            
            ))

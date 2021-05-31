@@ -2,7 +2,7 @@ import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
+// import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Dropbox from './components/Dropbox';
