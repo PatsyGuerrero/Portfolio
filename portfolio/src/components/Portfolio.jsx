@@ -1,13 +1,10 @@
 import React from 'react';
 import styles from './Portfolio.module.scss';
 import data from '../projects.json';
-import logo from '../assets/img/dribble.jpg'; 
 
 
 
 const Portfolio = () => {
-
-    let url='../assets/img/dribble.jpg';
 
     return (
         <section className={styles.container}>
@@ -23,8 +20,8 @@ const Portfolio = () => {
                         <span>{e.description}</span>
                     </div>
                     <div className={styles.botones}>
-                        <button> <a href={e.deploy} target="_blank">DEMO </a> </button>
-                        <button className={styles.repo}> <a href={e.github} target="_blank">REPOSITORIO </a></button>
+                        <button> <a href={e.deploy} target="_blank" rel="noreferrer">DEMO </a> </button>
+                        <button className={styles.repo}> <a href={e.github} target="_blank" rel="noreferrer">REPOSITORIO </a></button>
                     </div>
                </div>
               

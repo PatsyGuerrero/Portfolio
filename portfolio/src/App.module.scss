@@ -37,8 +37,8 @@ h2{
 @media (min-width: (map-get($breakpoints, medium))) {
   .App{
     // min-width: none;
-    width: 100% !important;
-    background-color: chartreuse;
+    width: 100vw !important;
+    background-color: $color-text-primary;
     min-height: 60vh;
     // padding-top: $height-navbar;
     // height: fit-content;

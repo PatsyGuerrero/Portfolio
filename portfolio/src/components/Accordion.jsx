@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import data from '../data.json';
-import styles from './Accordion.module.scss'
+import styles from './Accordion.module.scss';
 
 const Accordion = () => {
     

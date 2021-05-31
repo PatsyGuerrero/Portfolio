@@ -8,9 +8,9 @@
 .container{
     background-color: $color-text-primary;
     height: fit-content;
-    //display: flex;
-    //justify-content: center; 
-    //align-items: center;
+    // display: flex;
+    // justify-content: center; 
+    // align-items: center;
     padding-left: $padding-base-mobile;
     padding-bottom: 3rem;
     .vl {
@@ -33,7 +33,7 @@
     }
     .containerFirstDescription , .containerSecondDescription{
         font-size: 1.3rem;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     }
     .containerFirstDescription{
         // background-color: rgb(94, 107, 35);
@@ -57,7 +57,7 @@
         padding-left: $padding-base-mobile;
         .vl {
             height: 3rem;
-            margin: 0 0 1rem 0;
+            // margin: 0 0 1rem 0;
         }
     }
 }
