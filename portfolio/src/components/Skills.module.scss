@@ -2,16 +2,16 @@
 .container{
     background-color: $color-text-primary;
     height: fit-content;
-    // display: flex;
-    // justify-content: center; 
-    // align-items: center;
     padding-left: $padding-base-mobile;
     padding-bottom: 3rem;
     .vl {
-        // border-left: 3px solid green;
         border-left: 3px solid $primary-color;
         height: 3rem;
         margin: 0 0 1rem 0;
+    }
+    .containerTitle{
+        // background-color: forestgreen;
+        padding-top: 1rem;
     }
     h2, span{
         color: $primary-color;
@@ -21,44 +21,20 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 .containerGrap{
-    // height: 25rem;
     .containerTitle{
         h2{
             font-size: 3rem;
             font-family: 'Open Sans ';
         }
     }
-    // .containerFirstDescription , .containerSecondDescription{
-    //     font-size: 1.3rem;
-    //     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    // }
-    // .containerFirstDescription{
-    //     // background-color: rgb(94, 107, 35);
-    //     text-align: start;
-    //     font-weight: 700;
-    //     margin-bottom: 1rem;
-    //     .fristDescription{
-    //         span{
-    //             line-height: 1rem;
-    //         }
-    //     }
-                
-    // }
 }
 @media (max-width: (map-get($breakpoints, medium))-1) {
     .container{
-        // background-color: red;
         width: 100%;
         padding-left: $padding-base-mobile;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         .containerSkills{
-            background-color: tan;
+            // background-color: tan;
             width: 90%;
-            // margin: $padding-base-mobile;
-            // margin-left: -$padding-base-mobile;
-            // padding-right: $padding-base-mobile;
             .containerSkill{
                 width: 100%;
                 display: flex;
@@ -66,7 +42,7 @@
                 height: 1.5rem;
                 margin-bottom: 1.5rem;
                 text-align: right;
-                background-color: turquoise;
+                // background-color: turquoise;
                 .containerVar{
                     // width: 40rem;
                     width: 80%;
@@ -75,9 +51,6 @@
                     flex-wrap: wrap;
                     .skillPercentage{
                         background-color: $color-skills-percentage;
-                        // height: max-content;
-                        // flex-direction: nowrap;
-                        // white-space: nowrap;
                         max-height: 100%;
                         display: flex;
                         align-items: center;
@@ -88,7 +61,6 @@
                         height: 10px;
                         margin-bottom: auto;
                         margin-top: auto;
-                        // text-align: right;
                     }
                 }
                 .percentage{
@@ -96,8 +68,7 @@
                     justify-content: end;
                     align-items: center;
                     max-height: 100%;
-                    // text-align: end;
-                    background-color: violet;
+                    // background-color: violet;
                     margin-left: 0.5rem;
                     width: 15%;
                     max-width: 2rem;
@@ -109,32 +80,105 @@
 }
 @media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1) {
     .container{
-        background-color: tomato;
-        width: 100% ;
-        // display: flex;
+        // background-color: tomato;
+        width: $width-min-medium;
         padding-left: $padding-base-medium;
         .vl {
             height: 5rem;
         }
         .containerSkills{
-            background-color: firebrick;
+            // background-color: firebrick;
             width: 90%;
             .containerSkill{
+                width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                height: 1.1rem;
+                height: 1.5rem;
                 margin-bottom: 1.5rem;
-                .skillPercentage{
-                    background-color: $color-skills-percentage;
+                text-align: right;
+                // background-color: turquoise;
+                .containerVar{
+                    // width: 40rem;
+                    width: 80%;
+                    height: 100%;
                     display: flex;
-                    align-items: center;
-                    // width: ;
+                    flex-wrap: wrap;
+                    .skillPercentage{
+                        background-color: $color-skills-percentage;
+                        max-height: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .line{
+                        background-color: #f4f4f4;
+                        height: 10px;
+                        margin-bottom: auto;
+                        margin-top: auto;
+                    }
                 }
-                .line{
-                    background-color: #f4f4f4;
-                    height: 10px;
-                    margin-bottom: auto;
-                    margin-top: auto;
+                .percentage{
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    max-height: 100%;
+                    // background-color: violet;
+                    margin-left: 0.5rem;
+                    width: 15%;
+                    max-width: 2rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: (map-get($breakpoints, large))) {
+    .container{
+        // background-color: tomato;
+        width: $width-min-medium;
+        padding-left: $padding-base-large;
+        .vl {
+            height: 5rem;
+        }
+        .containerSkills{
+            // background-color: firebrick;
+            width: 90%;
+            .containerSkill{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                height: 1.5rem;
+                margin-bottom: 1.5rem;
+                text-align: right;
+                // background-color: turquoise;
+                .containerVar{
+                    width: 80%;
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .skillPercentage{
+                        background-color: $color-skills-percentage;
+                        max-height: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .line{
+                        background-color: #f4f4f4;
+                        height: 10px;
+                        margin-bottom: auto;
+                        margin-top: auto;
+                    }
+                }
+                .percentage{
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    max-height: 100%;
+                    // background-color: violet;
+                    margin-left: 0.5rem;
+                    width: 15%;
+                    max-width: 2rem;
+                    font-size: 2rem;
                 }
             }
         }

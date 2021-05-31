@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Experience.module.scss';
 import Accordeon from './Accordion';
 
-import Iconos from './Iconos';
+// import Iconos from './Iconos';
 import Images from './Images';
 
 const Experience = () => {
