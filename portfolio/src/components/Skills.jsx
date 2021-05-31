@@ -13,7 +13,7 @@ const Skills = () => {
                 
                 <div className={styles.containerSkills}>
                     {skills.map((ele) => {
-                        return <div width = '100%' className={styles.containerSkill}>
+                        return <div width = '100%' className={styles.containerSkill}> 
                             <div className={styles.containerVar}>
                                 {/* <span className={styles.skillName}>{ele.name.toLocaleUpperCase()}</span> */}
                                 <div style={{width: `${ele.percentage}%`}} className={styles.skillPercentage}>{ele.name.toLocaleUpperCase()}</div>
