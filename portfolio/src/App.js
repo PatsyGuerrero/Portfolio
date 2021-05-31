@@ -10,8 +10,7 @@ import Navbar from './components/Navbar';
 import styles from './App.module.scss'
 
 function App() {
-  
-  console.log(process.env.REACT,'atstastats')
+  console.log(process.env.REACT_APP_URLAPI,'atstastats')  
   return (
     <div className={styles.App}>
       {/* Apppppppppp */}

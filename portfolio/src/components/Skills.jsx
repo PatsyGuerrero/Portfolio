@@ -19,7 +19,7 @@ const Skills = () => {
                                 <div style={{width: `${ele.percentage}%`}} className={styles.skillPercentage}>{ele.name.toLocaleUpperCase()}</div>
                                 <div style={{width: `${100 - ele.percentage}%`}} className={styles.line}></div>
                             </div>
-                            <span className={styles.percentage}>{`${ele.percentage}%`}</span>
+                            <span className={styles.percentage}>{`${ele.percentage}%`}</span> 
                         </div>
                     })}
                 </div>
