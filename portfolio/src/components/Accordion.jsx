@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import data from '../data.json';
-import styles from './Accordion.module.scss'
+import styles from './Accordion.module.scss';
 
 const Accordion = () => {
     
@@ -23,7 +23,7 @@ const Accordion = () => {
         <>
             <form>     
                 { data.map((tab, index) => (
-                    <div key={index}>
+                    <div key={index} className={styles.deslizar}>
                         <h3>
                             <button 
                                 onClick={(e) => eventHandler(e, index)}

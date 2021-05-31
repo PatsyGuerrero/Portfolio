@@ -35,7 +35,19 @@ h2{
 }
 
 @media (min-width: (map-get($breakpoints, medium))) {
-  
+  .App{
+    // min-width: none;
+    width: 100vw !important;
+    background-color: $color-text-primary;
+    min-height: 60vh;
+    // padding-top: $height-navbar;
+    // height: fit-content;
+    // height: 95%;
+    // background-color: red;
+    // .Photo{
+    //   background-color: blue !important;
+    // }
+  }
 }
 
 // @media (min-width: map-get($breakpoints, small)) and (max-width: (map-get($breakpoints, medium) - 1)) {
