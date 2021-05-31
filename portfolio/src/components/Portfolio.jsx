@@ -32,7 +32,7 @@ const Portfolio = () => {
 
                    {/* {typeof `e.img` } */}
                    
-                   <img src={require(url).default}  alt="no se encuentra"  />
+                   <img src={require(`../assets/img/${e.img}`).default}  alt="no se encuentra"  />
                    
                </div>
            </div>
