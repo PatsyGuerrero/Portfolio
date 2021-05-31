@@ -10,22 +10,7 @@ const Skills = () => {
                     <h2>Skills</h2>
                 </div>
                 <div className={styles.vl}></div>
-                {/* <div className={styles.containerFirstDescription}>
-                    <span className={styles.fristDescription}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing 
-                    elit. Maiores vel voluptatem debitis. Molestiae, ad earum nam tenetur eum,
-                    blanditiis libero quae voluptatem id, laboriosam voluptatum nemo. Error dignissimos 
-                    recusandae atque. 
-                    </span>
-                </div>
-                <div className={styles.containerSecondDescription}>
-                    <span className={styles.secondDescription}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing 
-                    elit. Maiores vel voluptatem debitis. Molestiae, ad earum nam tenetur eum,
-                    blanditiis libero quae voluptatem id, laboriosam voluptatum nemo. Error dignissimos 
-                    recusandae atque. 
-                    </span>
-                </div> */}
+                
                 <div className={styles.containerSkills}>
                     {skills.map((ele) => {
                         return <div width = '100%' className={styles.containerSkill}>

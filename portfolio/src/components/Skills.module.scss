@@ -65,7 +65,7 @@
                 }
                 .percentage{
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-end; 
                     align-items: center;
                     max-height: 100%;
                     // background-color: violet;
@@ -116,9 +116,9 @@
                         margin-top: auto;
                     }
                 }
-                .percentage{
+                .percentage{ 
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-end;
                     align-items: center;
                     max-height: 100%;
                     // background-color: violet;
@@ -171,14 +171,14 @@
                 }
                 .percentage{
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-end;
                     align-items: center;
                     max-height: 100%;
                     // background-color: violet;
                     margin-left: 0.5rem;
                     width: 15%;
-                    max-width: 2rem;
-                    font-size: 2rem;
+                    max-width: 2rem; 
+                    font-size: 2rem; 
                 }
             }
         }
