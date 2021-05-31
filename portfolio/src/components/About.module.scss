@@ -7,8 +7,9 @@
 }
 .container{
     background-color: $color-text-primary;
+    // background-color: blue;
     height: fit-content;
-    // display: flex;
+    display: flex;
     // justify-content: center; 
     // align-items: center;
     padding-left: $padding-base-mobile;
@@ -54,10 +55,10 @@
     // }
     .container{
         width: 100vw;
-        padding-left: $padding-base-mobile;
+        padding-left: $padding-base-mobile ; 
         .vl {
             height: 3rem;
-            // margin: 0 0 1rem 0;
+            margin: 0 0 1rem 0;
         }
     }
 }

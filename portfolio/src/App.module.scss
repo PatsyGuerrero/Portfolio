@@ -10,7 +10,7 @@ h2{
 
 @media (max-width: (map-get($breakpoints, medium))-1) {
   body {
-      background-color: salmon;
+      background-color: red;
       width: 100vw;
       // width: 50vw !important;
       // display: flex;
@@ -38,7 +38,7 @@ h2{
   .App{
     // min-width: none;
     width: 100vw !important;
-    background-color: $color-text-primary;
+    // background-color: $color-text-primary;
     min-height: 60vh;
     // padding-top: $height-navbar;
     // height: fit-content;
