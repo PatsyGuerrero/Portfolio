@@ -3,12 +3,12 @@ import React from 'react';
 import styles from './Contact.module.scss';
 import emailjs from 'emailjs-com';
 
-const { YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_USER_ID } = process.env;
+//const { YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_USER_ID } = process.env;
 
 
 const Contact = () => {
 
-    console.log('hola', YOUR_SERVICE_ID);
+    //console.log('hola', YOUR_SERVICE_ID);
     function sendEmail(e) {
         e.preventDefault();
         
@@ -42,31 +42,33 @@ const Contact = () => {
                             <div className={styles.form__group}>
                                 
                                 <input type="text" name="name" className={styles.form__field}
-                                placeholder="Name" name="name" id='name' required />
+                                placeholder="Name"  id='name' required />
                                 <label for="name" className={styles.form__label} >Name</label>
                             </div>
 
                             <div className={styles.form__group}>                  
                                 <input type="email" name="email" className={styles.form__field}
-                                 placeholder="Email" name="email" id='email' required/>
+                                 placeholder="Email"  id='email' required/>
                                 <label for="email" className={styles.form__label}>Email</label>
                             </div>
 
                             <div className={styles.form__group}> 
                                 <input type="text" name="subject" className={styles.form__field}
-                                 placeholder="Subject" name="subject" id='subject' required/>
+                                 placeholder="Subject"  id='subject' required/>
                                 <label for="subject" className={styles.form__label}>Subject</label>
                             </div>
                             
                             <div className={styles.form__group}>
                                 
                                 <textarea name="message" className={styles.form__field}
-                                placeholder="message" name="message" id='message' required/>
+                                placeholder="message"  id='message' required/>
                                 <label for="message" className={styles.form__label}>Message</label>
                             </div>
                             
-
-                            <input type="submit" value="Send" />
+                            
+                                <input type="submit" value="Send Message" />
+                            
+                            
                     </form>
                 </div>
             </section>
