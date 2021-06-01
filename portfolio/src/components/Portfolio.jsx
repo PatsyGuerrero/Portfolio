@@ -7,7 +7,7 @@ import data from '../projects.json';
 const Portfolio = () => {
 
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id='Portfolio'>
            <div className={styles.elements}>
                 <h1>Portfolio</h1>
                 <div className={styles.line}></div>

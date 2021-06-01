@@ -91,3 +91,41 @@ button {
     //   width: 10rem;
       max-width: fit-content;
   }
+
+  .menuHolder{
+    background-color: blue;
+    width: 15rem;
+    padding: 1rem;
+    .headerMenu{
+      background-color: brown;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .menu1{
+        // background-color: cadetblue;
+        text-decoration: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        .divSection{
+          // background-color: chartreuse;
+          align-self: center;
+          font-size: 2rem;
+          a{
+            a:focus{
+              // background-color: cornflowerblue;
+              color: yellow;
+            }
+            &:hover{
+              background-color: yellow;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  a:visited{
+    background-color: cornflowerblue;
+    // color: crimson;
+  }

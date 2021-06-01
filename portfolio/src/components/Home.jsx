@@ -4,7 +4,7 @@ import Photo from './Photo.jsx';
 
 const Home = () => {
     return (
-      <section className={styles.container}>
+      <section className={styles.container} id='Home'>
         <Photo/>
         <div className={styles.containerGrap}>
           <div className={styles.containerTitle}> 

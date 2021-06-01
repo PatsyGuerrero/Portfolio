@@ -3,7 +3,7 @@ import styles from './Navbar.module.scss'
 
 
 const Navbar = () => {
-    let arr = ['about', 'skills', 'experience', 'contact', 'portfolio']
+    let sections = ['Home', 'About', 'Skills', 'Experience', 'Contact', 'Portfolio']
     , redes = [
         {name: 'Li.', link: 'https://www.linkedin.com/in/franciscotov/'}, 
         {name: 'Git.', link: 'https://github.com/franciscotov'}
@@ -33,10 +33,19 @@ const Navbar = () => {
                     </span>
                 </button>
                 {/* <div className={active ? styles.open: styles.close} className={styles.socialMenu}> */}
-                <div className={styles.socialMenu} className={active ? styles.open: styles.close}>
+                <div  className={active ? styles.open: styles.close}>
                     {redes.map((ele,i) =>{
                         return <div className={styles.red}><a href={ele.link} target='_blank' rel="noreferrer">{ele.name}</a></div>
                     })}
+                </div>
+                <div className={styles.menuHolder}>
+                    <nav className={styles.headerMenu}>
+                        <ul className={styles.menu1}>
+                            {sections.map((ele,i) =>{
+                                return <li className={styles.divSection}><a href={`#${ele}`}>{ele}</a></li>
+                            })}
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
