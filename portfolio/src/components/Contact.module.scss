@@ -1,6 +1,12 @@
 @import "../sassVariables/variables.scss";
 
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
 @media (min-width: (map-get($breakpoints, large))) {
+
     .container{
     background-color:$primary-color;
     width: $width-min-medium;
@@ -8,6 +14,9 @@
     height: fit-content;
     text-align: left;
     padding-left: $padding-base-large;
+    
+    display: flex;
+    flex-direction: column;
 
         .elements{
             display: flex;
@@ -33,6 +42,104 @@
             p{
                 color: $color-text-primary;
             }
-    }
+        }
+
+        .cont_form{
+
+            width: 90%;
+           // margin-right: 5rem;
+            //background-color: rgb(151, 42, 165);
+            margin-right: 12rem;
+
+            // .form_input_material {
+            //     width: fit-content;
+            //     background-color: brown;
+            //       input{
+            //         color: white;
+                    
+            //         background-color: aquamarine;
+            //       }
+            //     }
+
+            .form__group {
+                position: relative;
+                padding: 10px 0 0;
+                // margin-top: 10px;
+                width: 100%;
+              }
+              
+            
+            .form__field {
+                font-family: inherit;
+                width: 100%;
+                border: 0;
+                font-weight:700; 
+                border-bottom: 2px solid $gray;
+                outline: 0;
+                font-size: 1.3rem;
+                color: white;
+                padding: 7px 0;
+                background: transparent;
+                transition: border-color 0.2s;
+
+                &::placeholder {
+                    color: transparent;
+                  }
+
+                &:placeholder-shown ~ .form__label {
+                    font-size: 1.3rem;
+                    cursor: text;
+                    top: 20px;
+                  }
+            }
+
+            .form__label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                font-size: 1rem;
+                color: #9b9b9b;
+              }
+
+              .form__field:focus {
+                ~ .form__label {
+                  position: absolute;
+                  top: 0;
+                  display: block;
+                  transition: 0.2s;
+                  font-size: 1rem;
+                  color: $primary;
+                  font-weight:700;    
+                }
+                padding-bottom: 6px;  
+                font-weight: 700;
+                border-width: 3px;
+                border-image: linear-gradient(to right, $primary,$secondary);
+                border-image-slice: 1;
+              }
+           
+              .form__field{
+                &:required,&:invalid { box-shadow:none; }
+              }
+    
+        }
+         
+        // .login_form {
+        //     display: flex;
+        //     flex-direction: column;
+        //     //align-items: flex-start;
+        //     padding: 50px 40px;
+        //     color: white;
+        //     align-items: center;
+        //     //padding: 50px 40px;
+            
+           
+          
+        //     .btn {
+        //       width: 100%;
+        //       margin: 18px 0 9px 0;
+        //     }
+        //   }
     }
 }

@@ -13,7 +13,7 @@ const Contact = () => {
         e.preventDefault();
         
         
-        emailjs.sendForm(`${YOUR_SERVICE_ID}`, `${YOUR_TEMPLATE_ID}`, e.target, `${YOUR_USER_ID}`)
+        emailjs.sendForm('service_5ni45qh', 'template_8c513xp', e.target, 'user_SicT46dRo0IkFNAR0rnUC')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -34,21 +34,37 @@ const Contact = () => {
                         eligendi tenetur omnis repellat, officia harum iste at illum, corrupti quas
                         incidunt numquam aperiam veritatis commodi ipsum similique temporibus!</p>
                 </div>
-                <div>
-                    <form onSubmit={sendEmail}>
-                            <input type="hidden" name="contact_number" />
+
+                <div className={styles.cont_form}>
+                    <form className={styles.login_form}  onSubmit={sendEmail}>
+
+                           
+                            <div className={styles.form__group}>
+                                
+                                <input type="text" name="name" className={styles.form__field}
+                                placeholder="Name" name="name" id='name' required />
+                                <label for="name" className={styles.form__label} >Name</label>
+                            </div>
+
+                            <div className={styles.form__group}>                  
+                                <input type="email" name="email" className={styles.form__field}
+                                 placeholder="Email" name="email" id='email' required/>
+                                <label for="email" className={styles.form__label}>Email</label>
+                            </div>
+
+                            <div className={styles.form__group}> 
+                                <input type="text" name="subject" className={styles.form__field}
+                                 placeholder="Subject" name="subject" id='subject' required/>
+                                <label for="subject" className={styles.form__label}>Subject</label>
+                            </div>
                             
-                            <label>Name</label>
-                            <input type="text" name="name" />
-
-                            <label>Email</label>
-                            <input type="email" name="email" />
-
-                            <label>Subject</label>
-                            <input type="text" name="subject" />
-
-                            <label>Message</label>
-                            <textarea name="message" />
+                            <div className={styles.form__group}>
+                                
+                                <textarea name="message" className={styles.form__field}
+                                placeholder="message" name="message" id='message' required/>
+                                <label for="message" className={styles.form__label}>Message</label>
+                            </div>
+                            
 
                             <input type="submit" value="Send" />
                     </form>
