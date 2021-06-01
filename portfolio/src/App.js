@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Dropbox from './components/Dropbox';
 import Navbar from './components/Navbar';
 import styles from './App.module.scss'
+import Footer from './components/Footer';
 
 function App() {
   console.log(process.env.REACT_APP_URLAPI,'atstastats')  
@@ -21,7 +22,7 @@ function App() {
       <Portfolio/>
       <Skills/>
       <Contact/>
-      <Dropbox/> 
+      <Footer/>
     
     </div>
   );
