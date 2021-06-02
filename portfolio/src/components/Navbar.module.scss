@@ -6,52 +6,98 @@
     top: 0;
     width: 100%;
     height: $height-navbar;
-    background-color: aquamarine;  
+    background-color: aquamarine;
+    // color: #114e53;
+    color: $color-primary-text-navbar;
 }
-button {
-    display: flex; 
-    align-items: center;
-    background: none;
+.containerAcor{
+  background-color: $background-color-navbar;
+  position: fixed;
+  top: 0;
+  right: 5rem;
+  // width: 10rem;
+  height: $height-navbar;
+  // height: 100hv;
+  transform: translateX(100%);
+  transition: transform .3s ease,padding .3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: $color-secondary-text-navbar;
+  // color: red;
+  .red{
+    // background-color: greenyellow;
+    // color: $color-primary-text-navbar;
+    // height: 100%;
+    .icon{
+      background-color: red;
+      width: 2rem;
+      height: 2rem;
+    }
+    a{
+      color: $color-primary-text-navbar;
+    }
+    margin-left: 5px;
+  }
+}
+.open {
+  transform: translateX(0%) !important;
+}
+.containerButton{
+  background-color: rgb(126, 168, 63);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: $height-navbar;
+  z-index: 2;
+  .active , .inactive {
+    // background-color: red;
+    // z-index: 2;
+    width: 5rem;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    display: block;
+    margin: auto;
+    height: $height-navbar;
+    outline: none;
     border: none;
-    border-bottom: 0.2rem solid;
-    font-size: 1.2rem;
-    width: 10%;
-    text-align: left;
-    background-color: brown;
-    color: #003333;
-    // color: red;
-    font-weight: bold;
-    // margin-top: 0.5rem;
-    padding: 1rem;
+    .minus {
+      content: url('../assets/plus.svg');
+      width: 2.5rem;
+      height: 2.4rem;
+      transform: rotate(45deg);
+      // position: absolute;
+      background-color: blue;
+      right: 0;
+    }
+    .plus {
+      content: url('../assets/minus_ic.svg');
+      width: 2.5rem;
+      height: 2.4rem;
+      // transform: rotate(180deg);
+      transition-timing-function: ease-in;
+      transition: all 1s;
+      // position: absolute;
+      // transform: rotate(120deg);
+      right: 0;
+    }
+  }
 }
-.minus {
-    content: url('../assets/plus.svg');
-    width: 24px;
-    height: 24px;
-    transform: rotate(135deg);
-    // position: absolute;
-    right: 0;
-  }
 
-  a{
-      text-decoration: none;
-      font-size: 1.5rem;
-      margin-left: 0.5rem;
-  }
-  .plus {
-    content: url('../assets/minus_ic.svg');
-    width: 24px;
-    height: 24px;
-    // transform: rotate(180deg);
-    transition-timing-function: ease-in;
-    transition: all 1s;
-    // position: absolute;
-    // transform: rotate(120deg);
-    right: 0;
-  }
+a{
+  // background-color: red;
+  color: $color-secondary-text-navbar;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
 
   .close { 
-    //background: #e0e0e0;
+    // background: #e0e0e0;
     // color: #003333;
     color: red;
     box-sizing: border-box;
@@ -64,40 +110,26 @@ button {
     transition: all 1s;
   }
   
-  .open {
-    overflow: hidden;
-    // background:none;
-    display: flex;
-    // flex-direction: column;
-    flex-wrap: wrap;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-    border-radius: 1rem;
-    opacity:1;
-    width:100%;
-    height: auto;
-    transition-timing-function: ease-in;
-    transition: all 1s;
+  .menuHolderActive{
+    background-color: yellow;
+    // position: relative;
+    color: red;
+    transform: translateX(0%) !important;
   }
-  .socialMenu{
-      background-color: brown;
-      position: fixed;
-      top: 0;
-      left: 90vw;
-      letter-spacing: 2px;
-      display: flex;
-      flex-wrap: wrap;
-    //   width: 10rem;
-      max-width: fit-content;
-  }
-
   .menuHolder{
-    background-color: blue;
+    background-color: $background-color-navbar;
+    position: fixed;
+    top: $height-navbar;
+    height: 100vh !important;
+    transform: translateX(100%);
+    transition: transform .3s ease,padding .3s ease;
+    right: 0;
     width: 15rem;
     padding: 1rem;
     .headerMenu{
-      background-color: brown;
+      background-color: $background-color-navbar;
+      // height: 100vh;
+      // background-color: red;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -112,6 +144,7 @@ button {
           align-self: center;
           font-size: 2rem;
           a{
+            color: $color-primary-text-navbar;
             a:focus{
               // background-color: cornflowerblue;
               color: yellow;
