@@ -52,7 +52,7 @@ $height-download : 3rem;
         // width: 30vw !important;
         background-color: #17cc26;
         width: 40vw; //100vw - $width-min-medium;
-        height: 100vh;
+        height: 100vh-$height-footer;
         // margin-top: 30vh;
         margin-left: 60vw;
         //margin-left: 5rem;
