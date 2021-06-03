@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.scss';
 import { GrLinkedinOption } from 'react-icons/gr';
-import {FaGithub} from 'react-icons/fa';
-import {FaFreeCodeCamp} from 'react-icons/fa'
+import {FaGithub, FaFreeCodeCamp} from 'react-icons/fa';
+import { RiMenuFoldFill} from 'react-icons/ri'
+
 
 const icon = (ic) => {
     return () => ic;
@@ -11,13 +12,13 @@ const icon = (ic) => {
 const Navbar = () => {
     let sections = ['Home', 'About', 'Skills', 'Experience', 'Contact', 'Portfolio']
     , redes = [
-        {name: icon(<GrLinkedinOption></GrLinkedinOption>), link: 'https://www.linkedin.com/in/franciscotov/'}, 
-        {name: icon(<FaGithub></FaGithub>), link: 'https://github.com/franciscotov'},
-        {name: icon(<FaFreeCodeCamp></FaFreeCodeCamp>), link: 'https://www.freecodecamp.org/franciscotov'},
+        {name: icon(<GrLinkedinOption className={styles.icon}/>), link: 'https://www.linkedin.com/in/franciscotov/'}, 
+        {name: icon(<FaGithub className={styles.icon}/>), link: 'https://github.com/franciscotov'},
+        {name: icon(<FaFreeCodeCamp className={styles.icon}/>), link: 'https://www.freecodecamp.org/franciscotov'},
         // {name: 'Free', link: 'https://www.freecodecamp.org/franciscotov'},
         // {name: 'Free', link: 'https://www.freecodecamp.org/franciscotov'}
     ],
-    name = 'Francisco Tovar';
+    name = 'Francisco Tovar'.toLocaleUpperCase();
 
     const [active, setActive] = useState(false);
 
@@ -40,7 +41,8 @@ const Navbar = () => {
                         // tabIndex={indexCount(index)}
                     >
                         <span className={styles.titlewrapper}>
-                            <span className={active ? styles.plus : styles.minus}></span>
+                            {!active ? <RiMenuFoldFill className={styles.minus}/>: 
+                            <span className={styles.plus}> </span>}
                         </span>
                     </button>
                 </div>
@@ -48,14 +50,22 @@ const Navbar = () => {
                 {/* <div  className={styles.containerAcor}> */}
                 <div className={active ? `${styles.containerAcor} ${styles.open}` : styles.containerAcor}>
                     {redes.map((ele, i) => {
-                        return <div className={styles.red}><a className={styles.icon} href={ele.link} target='_blank' rel="noreferrer">{ele.name()}</a></div>
+                        return (
+                            <div className={styles.red}>
+                                <a  href={ele.link} target='_blank' rel="noreferrer">{ele.name()}</a>
+                            </div>
+                        );
                     })}
                 </div>
                 <div className={active ? `${styles.menuHolderActive} ${styles.menuHolder}` : `${styles.menuHolder}`}>
                     <nav className={styles.headerMenu}>
                         <ul className={styles.menu1}>
                             {sections.map((ele,i) =>{
-                                return <li className={styles.divSection}><a href={`#${ele}`}>{ele}</a></li>
+                                return (
+                                    <li className={styles.divSection}>
+                                        <a href={`#${ele}`} className={styles.a}>{ele}</a>
+                                    </li>
+                                );
                             })}
                         </ul>
                     </nav>
