@@ -27,6 +27,13 @@ const Navbar = () => {
         //setActive(index);
         active? setActive(false):setActive(true); 
     }
+    const handlerMenuSelected = (e, name) => {
+        e.preventDefault();
+        console.log(name, 'ettetete');
+        window.location.href = window.location.origin + `/#${name}`
+        setActive(false);
+    }
+    
     return (
         <div className={styles.nav}>
             <div className={styles.containerName}><p>{name}</p></div>
@@ -62,8 +69,8 @@ const Navbar = () => {
                         <ul className={styles.menu1}>
                             {sections.map((ele,i) =>{
                                 return (
-                                    <li className={styles.divSection}>
-                                        <a href={`#${ele}`} className={styles.a}>{ele}</a>
+                                    <li className={styles.divSection}> 
+                                        <a href={ele} className={styles.a} onClick={(e)=> handlerMenuSelected(e, ele)}>{ele}</a>
                                     </li>
                                 );
                             })}

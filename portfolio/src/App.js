@@ -5,7 +5,7 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Dropbox from './components/Dropbox';
+// import Dropbox from './components/Dropbox';
 import Navbar from './components/Navbar';
 import styles from './App.module.scss'
 import Footer from './components/Footer';
