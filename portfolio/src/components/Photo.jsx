@@ -8,7 +8,7 @@ const Photo = () => {
         <>
         <div className={styles.container}>
             <div className={styles.photoContainer}>
-                <div className={styles.photo}></div>
+                <div className={styles.photo}>hola</div>
             </div>
             <Download />
         </div>

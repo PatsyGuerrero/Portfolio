@@ -34,8 +34,6 @@ const Footer = () => {
                 <div className={styles.copyright}>
                     <span>© 2021 Developer by ........</span>
                 </div>
-                   
-                
             </section>
         );
     };

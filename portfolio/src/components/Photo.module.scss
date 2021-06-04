@@ -1,22 +1,24 @@
 @import "../sassVariables/variables.scss";
-$height-container-photo: 25rem;
-$height-download : 3rem;
+$height-container-photo: 100vh;
+$height-download : 2rem;
 
+.container{
+    height: $height-container-photo;
+    background-color: blue;
+}
 @media (max-width: (map-get($breakpoints, medium))-1) {
     // .container
     body {
         background-color: salmon; 
     }
     .container{
-        // width: 30vw !important;
-        // height: $height-container-photo ;
-        height: 12rem;
         // background-color: pink;
         // margin-top: 3.5rem ;
         width: 100% ;
+        height: fit-content;
         // background-color: $primary-color;
         .photoContainer{
-            background-color: green; 
+            background-color: $background-color-navbar; 
             margin-left: 0.5rem;
             width: 10rem;
             height: 10rem;
@@ -37,34 +39,32 @@ $height-download : 3rem;
 }
 
 @media (min-width: (map-get($breakpoints, medium))) {
-    // .container{
-    //     // display: flex;
-    //     // justify-content: center;
-    //     background-color: #17cc26;
-    //     width: 50vw;
-    //     height: 40rem;
-    //     margin-top: 10vh;
-    //     margin-left: 50vw;
-    //     position: fixed;
-      
-    // }
     .container{
         // width: 30vw !important;
-        background-color: #17cc26;
-        width: $width-photo; 
-        height: 100vh-$height-footer;
+        // background-color: $background-color-navbar;
+        width: $width-photo;
+        // height: 100vh;
+        // height: 100vh-$height-footer;
         // margin-top: 30vh;
         margin-left: 60vw;
         //margin-left: 5rem;
         position: fixed;
+        // display: flex;
+        // flex-direction: column;
+        // // flex-wrap: wrap;
+        // justify-content: center;
+        // align-items: center;
         top:0;
         margin-top: $height-navbar;
         padding-right: 2rem;
         .photoContainer{
-            background-color: green ;
-            width: 100% ;
-            height: $height-container-photo - $height-download ;
-            margin: auto;
+            // background-color: $background-color-navbar ;
+            background-color: green;
+            width: 30vw;
+            // height: $height-container-photo - $height-download ;
+            height: 10rem;
+            // margin: auto;
+            margin-left: 2.5rem;
             .photo{
                 background-color: blue;
                 text-align: end;

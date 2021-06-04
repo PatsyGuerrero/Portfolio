@@ -197,22 +197,22 @@ a{
   }
 }
 
-@media (min-width: (map-get($breakpoints, xl))) {
-  .containerAcor, .menuHolder{
-    background-color: red;
-  }
-  .containerName{
-    background-color: green;
-    transform: rotate(-90deg);
-    // transform: translateX(100%);
-    position: fixed;
-    left: -7rem;
-    top: 6rem;
-    color: $color-primary-text-navbar;
-    // margin: auto 1rem;
-    font-size: 1.3rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    width: fit-content;
-  }
-}
+// @media (min-width: (map-get($breakpoints, xl))) {
+//   .containerAcor, .menuHolder{
+//     background-color: red;
+//   }
+//   .containerName{
+//     background-color: green;
+//     transform: rotate(-90deg);
+//     // transform: translateX(100%);
+//     position: fixed;
+//     left: -7rem;
+//     top: 6rem;
+//     color: $color-primary-text-navbar;
+//     // margin: auto 1rem;
+//     font-size: 1.3rem;
+//     font-weight: 700;
+//     letter-spacing: 3px;
+//     width: fit-content;
+//   }
+// }
