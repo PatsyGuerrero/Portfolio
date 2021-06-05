@@ -36,6 +36,11 @@ $color-primary-text-navbar: $primary-color;
 $color-secondary-text-navbar: #f393a4;
 $background-color-navbar: $background-color-primary;
 $height-container-photo: 25rem;
+$hover-footer: #114e53;
+$primary: #11998e;
+$secondary: #179e4b;
+$white: #fff;
+$gray: #9b9b9b;
 // variable para el alto de la navbar
 $height-navbar: 5rem;
 // variable para el margen izquierdo de componentes en vista mobile
@@ -55,6 +60,7 @@ $max-width-container-description-large: 35rem;
 $width-photo: 40vw;
 //altura del footer
 $height-footer:15vh;
+
 
 // @mixin element-label-focus {
 //     color: #377D6A;

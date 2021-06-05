@@ -59,6 +59,13 @@
                     text-decoration: none;
                     color: $color-text-primary;
                 }
+
+                &:hover{
+                    border-image: linear-gradient(to right, $primary,$secondary);
+                    border-image-slice: 1;
+                    font-size: 1.3rem;
+                    padding: 1rem;
+                }
                 
             }
 
@@ -267,6 +274,11 @@
                     text-decoration: none;
                     color: $color-text-primary;
                 }
+
+                &:hover{
+                    border-image: linear-gradient(to right, $primary,$secondary);
+                    border-image-slice: 1;
+                }
                 
             }
 
@@ -337,6 +349,14 @@
                     outline: none;
                     text-decoration: none;
                     color: $color-text-primary;
+                }
+
+                &:hover{
+                    border-image: linear-gradient(to right, $primary,$secondary);
+                    border-image-slice: 1;
+                    font-size: 1.3rem;
+                    //font-size: 1.4rem;
+                    //padding: 1rem 0;
                 }
                 
             }
