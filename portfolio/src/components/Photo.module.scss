@@ -31,6 +31,7 @@ $height-download : 2rem;
 
 @media (min-width: (map-get($breakpoints, medium))) {
     .container{
+        
         width: $width-photo;
         margin-left: 60vw;
         position: fixed;
@@ -42,7 +43,7 @@ $height-download : 2rem;
             margin-left: 2.5rem;
             .photo{
                 text-align: end;
-                width: 25vw;
+                width: 28vw;
                 height: 28vw;
             }
         }

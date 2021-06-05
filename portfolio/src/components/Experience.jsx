@@ -14,7 +14,7 @@ const Experience = () => {
                     {/* <Iconos/> */}
                     <Images/>
                 </div>
-                <div className={styles.elements} id='Experience'>
+                <div className={styles.elements} id='Experience'> 
                     <h1 >Experience</h1>
                     <div className={styles.line}></div>
                     <div className={styles.acordeon}> 
