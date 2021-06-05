@@ -35,12 +35,12 @@ const Accordion = () => {
                             >
                                 <span className={styles.titlewrapper}>{tab.title}
                                     <span className={ active === index  ? styles.plus : styles.minus}></span>
-                                    
                                 </span>  
                             </button>
                         </h3>
                         <div id={ 'sect-' + indexCount(index) } className={ active === index  ? styles.panelopen : styles.panelclose }>
-                                { tab.description }
+                            <p className={styles.date}>{ tab.date }</p>
+                            <p>{ tab.description }</p>
                         </div>
                     </div>
                     ))
