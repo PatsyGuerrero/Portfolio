@@ -5,7 +5,7 @@
   }
 
   button {
-    display: flex;
+    display: flex; 
     align-items: center;
     background: none;
     border: none;
@@ -13,8 +13,8 @@
     font-size: 1.2rem;
     width: 100%;
     text-align: left;
-    // color: #003333;
-    color: red;
+    color: #003333;
+    // color: red;
     font-weight: bold;
     margin-top: 0.5rem;
     padding: 1rem;
@@ -35,7 +35,7 @@
 
       
       .plus {
-        // content: url('../assets/minus_ic.svg');
+        content: url('../assets/minus_ic.svg');
         width: 24px;
         height: 24px;
         transform: rotate(180deg);
@@ -49,8 +49,8 @@
 
   button.active {
     //background-color: #dfbd85;
-    // color: #003333;
-    color: red;
+    color: #003333;
+    // color: red;
     border: #dfbd85 solid 1px;
   }
   
@@ -58,7 +58,7 @@
       //background-color: #dfbd85;
       cursor: pointer;
   }
- 
+  
   .panelclose { 
     //background: #e0e0e0;
     // color: #003333;

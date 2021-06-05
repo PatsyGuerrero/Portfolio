@@ -4,7 +4,7 @@ const Skills = () => {
     // debe agregar a mano las habilidades con el formato siguiente
     let skills = [{name: 'Web Development', percentage: 60}, {name: 'Electonics', percentage: 70}]
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id='Skills'> 
             <div className={styles.containerGrap}>
                 <div className={styles.containerTitle}> 
                     <h2>Skills</h2>
@@ -19,7 +19,7 @@ const Skills = () => {
                                 <div style={{width: `${ele.percentage}%`}} className={styles.skillPercentage}>{ele.name.toLocaleUpperCase()}</div>
                                 <div style={{width: `${100 - ele.percentage}%`}} className={styles.line}></div>
                             </div>
-                            <span className={styles.percentage}>{`${ele.percentage}%`}</span>
+                            <span className={styles.percentage}>{`${ele.percentage}%`}</span> 
                         </div>
                     })}
                 </div>

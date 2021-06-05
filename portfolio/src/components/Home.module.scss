@@ -4,6 +4,7 @@
         color: $color-text-primary;
     }
     background-color: $primary-color;
+    // min-height: 80rem;
     height: fit-content;
     padding-bottom: $padding-bottom-component;
     .containerTitle{
@@ -15,7 +16,7 @@
 
     }
     .containerDescription{
-        z-index: 99;
+        // z-index: 99;
         text-align: start;
     }
 }

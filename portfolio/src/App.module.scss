@@ -4,84 +4,44 @@
 h2{
   font-family: "Prata", serif;
 }
+body, html{
+  font-family: 'Montserrat',sans-serif;
+  // background-color: $background-color-primary;
+  background-color: brown;
+}
 .App{
   padding-top: $height-navbar;
+}
+html{
+  scroll-behavior: smooth;
+}
+.App-link {
+  color: #61dafb;
 }
 
 @media (max-width: (map-get($breakpoints, medium))-1) {
   body {
-      background-color: salmon;
+      background-color: red;
       width: 100vw;
-      // width: 50vw !important;
-      // display: flex;
-      // justify-content: center;
-      // section{
-      //   background-color: saddlebrown;
-      // }
       .App{
-        // min-width: none;
         width: 100% !important;
         background-color: chartreuse;
         min-height: 100vh;
-        // padding-top: $height-navbar;
-        // height: fit-content;
-        // height: 95%;
-        // background-color: red;
-        // .Photo{
-        //   background-color: blue !important;
-        // }
       }
   }
 }
 
 @media (min-width: (map-get($breakpoints, medium))) {
   .App{
-    // min-width: none;
     width: 100vw !important;
-    background-color: $color-text-primary;
     min-height: 60vh;
-    // padding-top: $height-navbar;
-    // height: fit-content;
-    // height: 95%;
-    // background-color: red;
-    // .Photo{
-    //   background-color: blue !important;
-    // }
   }
 }
-
-// @media (min-width: map-get($breakpoints, small)) and (max-width: (map-get($breakpoints, medium) - 1)) {
-//   body {
-//       background-color: lightseagreen;
-//   }
-// }
-
-// @media (min-width: map-get($breakpoints, medium)) {
-//   body {
-//       background-color: green;
-//   }
-// }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-// .App-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

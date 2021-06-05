@@ -2,7 +2,7 @@
 
 @media (max-width: (map-get($breakpoints, medium ))-1) {
     .container{
-        background-color:$primary-color;
+        background-color: $primary-color;
         width: 100%;
         // width: 110%;
         height: fit-content;
@@ -159,7 +159,7 @@
             flex-direction: column;
             // margin-left: 5rem;
             margin-right: 5rem;
-            margin-top: 3rem;
+            // margin-top: 3rem;
     
             h1{
                 font-family: 'Crimson Pro', serif;
@@ -288,9 +288,19 @@
 
 
 @media (min-width: (map-get($breakpoints, large))) {
+    // background-color: $primary-color;
+    //     width: 100%;
+    //     // width: 110%;
+    //     height: fit-content;
+    //     text-align: left;
+    //     padding-left: $padding-base-mobile;
     .container{
     background-color:$primary-color;
     width: $width-min-medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
     // width: 110%;
     height: fit-content;
     text-align: left;

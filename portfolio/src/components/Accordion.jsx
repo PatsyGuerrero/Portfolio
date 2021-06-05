@@ -6,7 +6,7 @@ const Accordion = () => {
     
     let indexPlus;
 
-    const [active, setActive] = useState('');
+    const [active, setActive] = useState(''); 
 
     const eventHandler = (e, index) => {
         e.preventDefault();
