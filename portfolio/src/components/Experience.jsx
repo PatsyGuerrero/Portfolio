@@ -9,9 +9,6 @@ const Experience = () => {
     return (
         <section className={styles.container} >
                 <div className={styles.iconos}>
-                    <div className='holaa'></div>
-                    Iconos
-                    {/* <Iconos/> */}
                     <Images/>
                 </div>
                 <div className={styles.elements} id='Experience'> 
