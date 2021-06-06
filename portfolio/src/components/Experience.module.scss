@@ -17,6 +17,7 @@
         padding-left: $padding-base-mobile;
         .iconos{
             display:block;
+            justify-content: center;
             width: 100%;
             height: fit-content;
             background-color: $primary-color;
@@ -66,8 +67,9 @@
         .iconos{
             // background-color: plum;
             display:block;
+            // justify-content: center;
             width: 100%;
-            height: 30vh;
+            height: fit-content;
             //background-color: #003333;
             margin-left: -$padding-base-medium;
             padding-right: $padding-base-medium;

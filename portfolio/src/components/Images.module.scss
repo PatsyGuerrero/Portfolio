@@ -3,22 +3,17 @@
 .container{
     // background-color: cadetblue;
     width: 100%;
-    // margin: auto;
 }
 
 @media (max-width: (map-get($breakpoints, small ))-1){
     .container{
         // background-color: red;
-        // width: 20rem;
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
-        // flex-wrap: wrap;
         text-align: left;
-        // padding-left: $padding-base-mobile;
         .containerImg{
             // background-color: violet;
             width: fit-content;
@@ -30,7 +25,6 @@
             margin-bottom: 1rem;
             .images{
                 // background-color: black;
-                // margin-left: 1.5rem;
                 margin-top: 1.5rem;
                 width: 8rem;
                 height: 8rem;
@@ -45,36 +39,35 @@
     }
 }
 
-@media (min-width: (map-get($breakpoints, small))) and (max-width: (map-get($breakpoints, medium))-1){
+@media (min-width: (map-get($breakpoints, small))) and (max-width: (map-get($breakpoints, large))-1){
     .container{
-        background-color: yellow;
-        // width: 20rem;
+        width: 21rem;
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
+        margin: auto;
         justify-content: center;
-        // flex-direction: column;
         align-items: center;
-        // flex-wrap: wrap;
         text-align: left;
-        padding-left: $padding-base-mobile;
+        padding-bottom: 2rem;
         .containerImg{
-            background-color: violet;
+            // background-color: violet;
             width: fit-content;
             height: fit-content;
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
+            margin-right: 2rem;
             align-items: center;
             .images{
-                background-color: black;
-                margin-left: 1.5rem;
+                // background-color: black;
                 margin-top: 1.5rem;
-                width: 8rem;
+                width: 8.5rem;
                 height: 8rem;
             }
             .description{
-                background-color: blue;
+                // background-color: blue;
                 margin-top: 6px;
                 font-size: 0.7rem;
                 letter-spacing: 3px;
@@ -83,24 +76,36 @@
     }
 }
 
-@media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1) {
-
-    .container{
-        // background-color:#5068d1;
-        // width: $width-min-medium;
-        height: fit-content;
-        text-align: left;
-        padding-left: $padding-base-medium; 
-    }
-}
-
 @media (min-width: (map-get($breakpoints, large))) {
     .container{
-        // width: $width-min-medium;
-        // width: 110%;
-        // display: flex;
-        height: fit-content;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
         text-align: left;
-        padding-left: $padding-base-large;
+        margin-left: $padding-base-mobile;
+        .containerImg{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 2rem;
+            align-items: center;
+            .images{
+                // background-color: black;
+                margin-top: 1.5rem;
+                width: 11vw;
+                height: 11vw;
+            }
+            .description{
+                // background-color: blue;
+                margin-top: 6px;
+                font-size: 0.7rem;
+                letter-spacing: 3px;
+            }
+        }
     }
 }
