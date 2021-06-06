@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import styles from './Navbar.module.scss';
 import { GrLinkedinOption } from 'react-icons/gr';
 import {FaGithub, FaFreeCodeCamp} from 'react-icons/fa';
-import { RiMenuFoldFill} from 'react-icons/ri'
+import { RiMenuFoldFill} from 'react-icons/ri';
+import personalData from '../personalData.json';
 
 
 const icon = (ic) => {
@@ -17,8 +18,7 @@ const Navbar = () => {
         {name: icon(<FaFreeCodeCamp className={styles.icon}/>), link: 'https://www.freecodecamp.org/franciscotov'},
         // {name: 'Free', link: 'https://www.freecodecamp.org/franciscotov'},
         // {name: 'Free', link: 'https://www.freecodecamp.org/franciscotov'}
-    ],
-    name = 'Francisco Tovar'.toLocaleUpperCase();
+    ];
 
     const [active, setActive] = useState(false);
 
@@ -36,7 +36,7 @@ const Navbar = () => {
     
     return (
         <div className={styles.nav}>
-            <div className={styles.containerName}><p>{name}</p></div>
+            <div className={styles.containerName}><p>{`${personalData.firstName + ' '+ personalData.lastName}`.toLocaleUpperCase()}</p></div>
             <div className={styles.containerMenu}>
                 <div className={styles.containerButton}>
                     <button

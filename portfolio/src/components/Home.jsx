@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Home.module.scss';
 import Photo from './Photo.jsx';
+import personalData from '../personalData.json';
 
 const Home = () => {
     return (
@@ -11,9 +12,9 @@ const Home = () => {
             <h1>
               Hello
               <br/>
-              I am Patsy
+              I am {personalData.firstName}
               <br/>
-              Guerrero
+              {personalData.lastName}
             </h1>
           </div>
           <div className={styles.containerDescription}>
