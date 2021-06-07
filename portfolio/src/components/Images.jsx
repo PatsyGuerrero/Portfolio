@@ -3,7 +3,7 @@ import styles from './Images.module.scss';
 
 const Images = () => {
     let listOfImages = [
-        {description: 'development', img: 'web_development.png'},
+        {description: 'development', img: 'web_development2.png'},
         {description: 'sports', img: 'sports.png'},
         {description: 'responsive', img: 'responsive.png'},
         {description: 'science', img: 'atom.png'}
