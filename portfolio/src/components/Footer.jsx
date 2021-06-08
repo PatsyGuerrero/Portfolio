@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.scss';
 import {GrLinkedinOption} from 'react-icons/gr';
 import {FaGithub, FaFreeCodeCamp, FaDribbble} from 'react-icons/fa'
+import personalData from '../personalData.json';
 
 const Footer = () => {
     
@@ -32,7 +33,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.copyright}>
-                    <span>© 2021 Developer by ........</span>
+                    <span>© 2021 Developer by {personalData.nickName}</span>
                 </div>
             </section>
         );

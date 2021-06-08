@@ -2,8 +2,8 @@
 
 .container{
     z-index: 2;
-    // background-color: $color-text-primary;
-    background-color: green;
+    background-color: $background-color-primary;
+    // background-color: green;
 }
 @media (max-width: (map-get($breakpoints, medium))-1) {
 
@@ -143,7 +143,7 @@
                 }
 
                 .size:hover{
-                    color: #114e53;
+                    color: $hover-footer;
                 }   
             }      
         }

@@ -9,12 +9,9 @@ const Experience = () => {
     return (
         <section className={styles.container} >
                 <div className={styles.iconos}>
-                    <div className='holaa'></div>
-                    Iconos
-                    {/* <Iconos/> */}
                     <Images/>
                 </div>
-                <div className={styles.elements} id='Experience'>
+                <div className={styles.elements} id='Experience'> 
                     <h1 >Experience</h1>
                     <div className={styles.line}></div>
                     <div className={styles.acordeon}> 

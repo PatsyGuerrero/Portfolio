@@ -8,6 +8,7 @@
         height: fit-content;
         text-align: left;
         padding-left: $padding-base-mobile;
+        padding-bottom: 1rem;
              
         .elements{
             //display: flex;
@@ -30,6 +31,46 @@
                 //width: 0.5rem;
                 height: 4rem;           
                 border-left: 0.15rem solid $color-text-primary ;                   
+            }
+        }
+
+        .botones{
+            display: flex;
+            align-items:flex-end;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 3rem;
+           
+
+        button{
+                display: flex;
+                align-items: center;
+                background: none;
+                border:none;
+                border: 0.15rem solid;
+                font-size: 1.2rem;
+                text-align: left;
+                color: $color-text-primary;
+                padding: 0.8rem;
+                height: fit-content;
+
+                a{
+                    outline: none;
+                    text-decoration: none;
+                    color: $color-text-primary;
+                }
+
+                &:hover{
+                    border-image: linear-gradient(to right, $primary,$secondary);
+                    border-image-slice: 1;
+                    font-size: 1.3rem;
+                    padding: 1rem;
+                }
+                
+            }
+
+        .repo{
+                margin-left: 1rem;
             }
         }
     
@@ -66,7 +107,7 @@
                     h2{
                         
                         font-family: 'Crimson Pro', serif;
-                        font-size: 1.5rem;
+                        font-size: 2rem;
                         //color: $color-text-primary;  
                         //background-color: rgb(62, 15, 107); 
                         margin-top: 0;                
@@ -74,49 +115,14 @@
                    
                     span{
                         margin-top: 0.2rem; 
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                         //background-color: burlywood;
                         padding: 0.8rem 0 0.8rem 0 ;
                     }
                     
                 }
                
-                .botones{
-                    display: flex;
-                    align-items:center;
-                    //background-color: crimson;
-                    width: 100%;
-                    height: 100%;
-                    margin-bottom: 1rem;
                       
-                button{
-                        display: flex;
-                        align-items: center;
-                        background: none;
-                        border:none;
-                        border: 0.15rem solid;
-                        font-size: 120%;
-                        //width: 100%;
-                        text-align: left;
-                        color: $color-text-primary;
-                        //font-weight: bold;
-                        //margin-bottom: 0;
-                        padding: 2%;
-                        height: fit-content;
-    
-                        a{
-                            outline: none;
-                            text-decoration: none;
-                            color: $color-text-primary;
-                        }
-                        
-                    }
-    
-                .repo{
-                        margin-left: 5%;
-                    }
-                }
-                    
             }
             
             .imagen{
@@ -181,19 +187,14 @@
             //flex-direction: column;
             // margin-left: 5rem;
             margin-right: 2rem;
-            margin-top: 3rem;   
-            // background-color: rgb(23, 2, 56);
-            padding: 0 0 3rem 0;
+            margin-top: 2rem;   
+            padding: 0 0 1rem 0;
             
             
             .info{
                 display: flex;
                 width: 50%;
                 height: fit-content;
-                //background-color: blueviolet;
-                //align-self: flex-end;
-                //justify-content: flex-start;
-                //align-items: flex-start;
                 flex-direction: column;
                 top: 0;
     
@@ -203,61 +204,23 @@
                     flex-direction: column;
                     //background-color: coral;
                     color: $color-text-primary; 
-        
                     h2{
-                        
                         font-family: 'Crimson Pro', serif;
                         font-size: 2rem;
-                        //color: $color-text-primary;  
-                        //background-color: rgb(62, 15, 107); 
                         margin-top: 0;                
                     }
-
+                    // .description{
+                    //     background-color: blueviolet;
+                    // }
                     span{
-                        //margin-top: 0.2rem; 
-                        font-size: 0.7rem;
+                        //margin-top: 0.2rem;
+                        //background-color: blue;
+                        font-size: 1rem;
                         //background-color: burlywood;
-                        padding: 0 0 0.8rem 0 ;
+                        padding: 0 0 0.5rem 0 ;
                     }
                    
                     
-                }
-               
-                .botones{
-                    display: flex;
-                    align-items:center;
-                    //margin-top: 3rem;
-                    //background-color: crimson;
-                    width: 100%;
-                    height: 100%;
-                   
-    
-                button{
-                        display: flex;
-                        align-items: center;
-                        background: none;
-                        border:none;
-                        border: 0.15rem solid;
-                        font-size: 90%;
-                        //width: 100%;
-                        text-align: left;
-                        color: $color-text-primary;
-                        //font-weight: bold;
-                        //margin-bottom: 0;
-                        padding: 5%;
-                        height: fit-content;
-    
-                        a{
-                            outline: none;
-                            text-decoration: none;
-                            color: $color-text-primary;
-                        }
-                        
-                    }
-    
-                .repo{
-                        margin-left: 1rem;
-                    }
                 }
                     
             }
@@ -281,6 +244,48 @@
                 }
             }
         }
+
+        .botones{
+            display: flex;
+            align-items:center;
+            padding-bottom: 2rem;
+            //background-color: crimson;
+            width: 100%;
+            height: 100%;
+           
+
+        button{
+                display: flex;
+                align-items: center;
+                background: none;
+                border:none;
+                border: 0.15rem solid;
+                font-size: 90%;
+                //width: 100%;
+                text-align: left;
+                color: $color-text-primary;
+                //font-weight: bold;
+                //margin-bottom: 0;
+                padding: 2%;
+                height: fit-content;
+
+                a{
+                    outline: none;
+                    text-decoration: none;
+                    color: $color-text-primary;
+                }
+
+                &:hover{
+                    border-image: linear-gradient(to right, $primary,$secondary);
+                    border-image-slice: 1;
+                }
+                
+            }
+
+        .repo{
+                margin-left: 1rem;
+            }
+        }
     
         }
     
@@ -288,20 +293,13 @@
 
 
 @media (min-width: (map-get($breakpoints, large))) {
-    // background-color: $primary-color;
-    //     width: 100%;
-    //     // width: 110%;
-    //     height: fit-content;
-    //     text-align: left;
-    //     padding-left: $padding-base-mobile;
+  
     .container{
     background-color:$primary-color;
     width: $width-min-medium;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
-    // width: 110%;
     height: fit-content;
     text-align: left;
     padding-left: $padding-base-large;
@@ -311,9 +309,9 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        // margin-left: 5rem;
         margin-right: 5rem;
         margin-top: 3rem;
+        
 
         h1{
             font-family: 'Crimson Pro', serif;
@@ -322,11 +320,54 @@
         }
 
         .line {
-            //width: 0.5rem;
             height: 6rem;           
             border-left: 0.15rem solid $color-text-primary ;                   
         }
     }
+
+        .botones{
+            display: flex;
+            align-items:flex-end;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 3rem;
+           
+
+        button{
+                display: flex;
+                align-items: center;
+                background: none;
+                border:none;
+                border: 0.15rem solid;
+                font-size: 1.2rem;
+                text-align: left;
+                color: $color-text-primary;
+                padding: 0.8rem;
+                height: fit-content;
+
+                a{
+                    outline: none;
+                    text-decoration: none;
+                    color: $color-text-primary;
+                }
+
+                &:hover{
+                    border-image: linear-gradient(to right, $primary,$secondary);
+                    border-image-slice: 1;
+                    font-size: 1.3rem;
+                    //font-size: 1.4rem;
+                    //padding: 1rem 0;
+                }
+                
+            }
+
+        .repo{
+                margin-left: 1rem;
+            }
+        }
+    
+
+
 
     .cart {
         display:flex;
@@ -335,9 +376,10 @@
         //flex-direction: column;
         // margin-left: 5rem;
         margin-right: 5rem;
-        margin-top: 3rem;   
+        margin-top: 1.5rem;   
         //background-color: rgb(23, 2, 56);
-        padding: 0 0 2rem 0;
+        padding: 0 0 0.5rem 0;
+        
         
         
         .info{
@@ -372,45 +414,7 @@
                 }
                 
             }
-           
-            .botones{
-                display: flex;
-                align-items:flex-end;
-                //margin-top: 3rem;
-                //background-color: crimson;
-                width: 100%;
-                height: 100%;
-                margin-bottom: 0;
-               
-
-            button{
-                    display: flex;
-                    align-items: center;
-                    background: none;
-                    border:none;
-                    border: 0.15rem solid;
-                    font-size: 1.2rem;
-                    //width: 100%;
-                    text-align: left;
-                    color: $color-text-primary;
-                    //font-weight: bold;
-                    //margin-bottom: 0;
-                    padding: 0.8rem;
-                    height: fit-content;
-
-                    a{
-                        outline: none;
-                        text-decoration: none;
-                        color: $color-text-primary;
-                    }
-                    
-                }
-
-            .repo{
-                    margin-left: 1rem;
-                }
-            }
-                
+     
         }
         
         .imagen{
