@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import data from '../data.json';
 import styles from './Accordion.module.scss';
 
-const Accordion = () => {
+const Accordion = ({ state }) => {
     
     let indexPlus;
+    //dat = state ? data[0]: data[1];
 
     const [active, setActive] = useState(''); 
 
     const eventHandler = (e, index) => {
         e.preventDefault();
         //setActive(index);
-        active===index? setActive(''):setActive(index);
+        active === index ? setActive(''):setActive(index);
     }
 
     const indexCount = (index) => {
@@ -39,7 +40,7 @@ const Accordion = () => {
                             </button>
                         </h3>
                         <div id={ 'sect-' + indexCount(index) } className={ active === index  ? styles.panelopen : styles.panelclose }>
-                            <p className={styles.date}>{ tab.date }</p>
+                            <p className={styles.date}>{ `${tab.university} ${tab.date} `}</p>
                             <p>{ tab.description }</p>
                         </div>
                     </div>

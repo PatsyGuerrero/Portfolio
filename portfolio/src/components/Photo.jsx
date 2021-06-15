@@ -1,7 +1,7 @@
 import React from 'react';
 import Download from './Download';
 import styles from './Photo.module.scss';
-import img from "../assets/img/photo.JPG";
+import img from "../assets/img/patsy.jpg";
 
 const Photo = () => {
     return (

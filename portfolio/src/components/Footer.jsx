@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import {GrLinkedinOption} from 'react-icons/gr';
-import {FaGithub, FaFreeCodeCamp, FaDribbble} from 'react-icons/fa'
+import {FaGithub} from 'react-icons/fa'
 import personalData from '../personalData.json';
+
+//FaFreeCodeCamp, FaDribbble
 
 const Footer = () => {
     
@@ -20,7 +22,7 @@ const Footer = () => {
                         <FaGithub className={styles.size}/>
                         </a>
                     </div>
-                    <div className={styles.icon}>
+                    {/* <div className={styles.icon}>
                         <a href="https://github.com/PatsyGuerrero" target="_blank" rel="noreferrer">
                         <FaFreeCodeCamp className={styles.size}/>
                         </a>
@@ -29,7 +31,7 @@ const Footer = () => {
                         <a href="https://dribbble.com/IchBinPatsy" target="_blank" rel="noreferrer">
                         <FaDribbble className={styles.size}/>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className={styles.copyright}>
