@@ -121,7 +121,7 @@
             height: 50vh;
             margin-left: -$padding-base-large;
             padding-right: $padding-base-large;
-            background-color: #003333;
+            background-color: $primary-color;
         }
 
         .elements{
@@ -136,13 +136,13 @@
             h1{
                 font-family: 'Crimson Pro', serif;
                 font-size: 3rem;
-                color:#003333 ;
+                color: $primary-color ;
             }
 
             .line {
                 //width: 0.5rem;
                 height: 6rem;           
-                border-left: 0.15rem solid #003333;                   
+                border-left: 0.15rem solid $primary-color;                   
             }
 
             .acordeon{
