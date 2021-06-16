@@ -4,7 +4,7 @@ import styles from './Download.module.scss';
 const Download = () => {
     return (
         <div className={styles.containerDownload}>
-            <a href='cv_patsy_guerrero_adrian.pdf' download>Download CV</a>
+            <a require href={require(`./CV_PATSY_GUERRERO.pdf`).default} download  >Download CV</a>
         </div>
     );
 };
