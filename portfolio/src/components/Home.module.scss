@@ -1,39 +1,95 @@
+@import "../sassVariables/variables.scss";
 .container{
-    background-color: red;
-    width: 50vw;
-    height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7vh;
-
-    //margin-left: 12rem;
-
-    h1{
-        font-size: 5rem;
-        font-family: 'Open Sans ';
-        line-height:5rem;
+    h1 , span{
+        color: $color-text-primary;
     }
-
-    .containerGrap{
-        background-color: lightblue;
-        width: 90%;
-        height: 90%;
-    }
+    background-color: $primary-color;
+    // min-height: 80rem;
+    height: fit-content;
+    padding-bottom: $padding-bottom-component;
     .containerTitle{
-        width: fit-content;
-        background-color: blueviolet;
+        width: 100% ;
         text-align: start;
-        
+        h1{
+            font-family: 'Open Sans ';
+        }
+
     }
     .containerDescription{
-        width: 50%;
-        background-color: rgb(130, 130, 223);
+        // z-index: 99;
         text-align: start;
+    }
+}
 
+@media (max-width: (map-get($breakpoints, medium))-1) {
+    .container{
+        width: 100%;
+        padding-left: $padding-base-mobile;
+        .containerTitle{
+            h1{
+                font-size: $h1-title-mobile;
+                line-height: $h1-title-mobile;
+            }
+        }
+        .containerDescription{
+            width: 90vw;
+            max-width: $max-width-container-description-mobile;
+            span{
+                font-size: $font-size-home-span;
+                line-height: -1.3rem;
+            }
+                    
+        }
+    }
+    
+}
+
+@media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1) {
+    .container{
+        width: $width-min-medium ;
+        display: flex;
+        padding-left: $padding-base-medium;
+    }
+    .containerTitle{
+        h1{
+            font-size: $h1-title-large;
+            line-height: $h1-title-large - 1rem;
+        }
+    }
+    .containerDescription{
+        width: 100%;
+        max-width: $max-width-container-description-large;
         span{
-            font-size: 1rem;
-            line-height: 1.8rem;
+            font-size: $font-size-home-span ;
+            line-height: 1.3rem ;
+        }
+                
+    }
+}
+
+@media (min-width: (map-get($breakpoints, large))) {
+    body {
+        background-color: rgb(114, 218, 250);
+    }
+    .container{
+        width: $width-min-medium;
+        display: flex;
+        padding-left: $padding-base-large;
+    }
+    .containerTitle{
+        h1{
+            font-size: $h1-title-large;
+            line-height: $h1-title-large - 1rem;
+            color:$purple;
+        }
+    }
+    
+    .containerDescription{
+        width: 100%;
+        max-width: $max-width-container-description-large;
+        span{
+            font-size: $font-size-home-span;
+            line-height: 1.3rem ;
         }
                 
     }
