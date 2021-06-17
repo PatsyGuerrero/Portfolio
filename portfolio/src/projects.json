@@ -1,14 +1,27 @@
 
   
 [
+  [
     {
       "name": "Code Bakery",
-      "description": "convallis justo. Curabitur vitae imperdiet magna, non pharetra est. Proin eget auctor.",
-      "img":"",
-      "video":"https://vimeo.com/551611700",
-      "github":"https://github.com/ecommercehenry/codebakery",
-      "deploy":"https://codebakery.store/"
+      "description": "E-commerce web application, the application was made so that the user had a comfortable experience(including responsive) and that he could purchase products quickly, it allows to pay with two payment methods (mercadopago and stripe) and perform authentication in two steps 2FA. On the administrator's side, it has a comfortable experience allowing you to carry out promotions manually and manage users and products. The application is built with the PERNG technology stack (Postgresql, Express, React, Node and Graphql).",
+      "img": "",
+      "video": "https://vimeo.com/551611700",
+      "github": "https://github.com/ecommercehenry/codebakery",
+      "deploy": "https://codebakery.store/"
     }
+  ],
+  [
+    {
+      "name": "Code Bakery",
+      "description": "Aplicación web e-commerce, la aplicación fue hecha de manera que el usuario tuviera una esperiencia agradable(incluyendo vistas responsive) y pudiera obtener productos de manera rápida, esta permite el pago a través de dos métodos de pago (mercadopago y stripe) y tiene la funcionalidad de autenticación en dos pasos 2FA. En el lado del administrador, esta tiene una vista agradable y permite cargar promociones manualmente y manejar tanto productos como usuarios. La aplicación fue construida bajo el stack de tecnologías PERNG (Postgresql, Express, React, Node y Graphql)",
+      "img": "",
+      "video": "https://vimeo.com/551611700",
+      "github": "https://github.com/ecommercehenry/codebakery",
+      "deploy": "https://codebakery.store/"
+    }
+  
   ]
+]
 
- 
+  

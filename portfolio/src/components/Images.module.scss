@@ -78,7 +78,7 @@
 
 @media (min-width: (map-get($breakpoints, large))) {
     .container{
-        //background-color: blue;
+        // background-color: blue;
         height: 100%;
         display: flex;
         margin: auto;
@@ -87,7 +87,7 @@
         text-align: left;
         margin-left: $padding-base-mobile;
         .containerImg{
-            //background-color: brown;
+            // background-color: brown;
             width: fit-content;
             height: fit-content;
             display: flex;

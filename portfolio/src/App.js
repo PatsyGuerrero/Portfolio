@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -10,20 +11,19 @@ import Navbar from './components/Navbar';
 import styles from './App.module.scss'
 import Footer from './components/Footer';
 
+
 function App() {
-  console.log(process.env.REACT_APP_URLAPI,'atstastats')  
+  const [state, setState] = useState(true);
   return (
     <div className={styles.App}>
-      {/* Apppppppppp */}
-      <Navbar/>
-      <Home/>
-      <About/> 
-      <Experience/> 
-      <Portfolio/>
-      <Skills/>
-      <Contact/>
-      <Footer/>
-    
+      <Navbar state={state} setState = {setState}/>
+      <Home state={state}/>
+      <About state={state}/> 
+      <Experience state={state}/> 
+      <Portfolio state={state}/>
+      <Skills state={state}/>
+      <Contact state={state}/>
+      <Footer state={state}/>
     </div>
   );
 }

@@ -4,8 +4,7 @@ import styles from './Accordion.module.scss';
 
 const Accordion = ({ state }) => {
     
-    let indexPlus;
-    //dat = state ? data[0]: data[1];
+    let indexPlus, dat = state ? data[0]: data[1];
 
     const [active, setActive] = useState(''); 
 
@@ -23,7 +22,7 @@ const Accordion = ({ state }) => {
     return(
         <>
             <form>     
-                { data.map((tab, index) => (
+                { dat.map((tab, index) => (
                     <div key={index} className={styles.deslizar}>
                         <h3>
                             <button 

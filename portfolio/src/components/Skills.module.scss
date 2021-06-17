@@ -1,4 +1,5 @@
 @import "../sassVariables/variables.scss";
+
 .container{
     background-color: $color-text-primary;
     height: fit-content;
@@ -7,13 +8,14 @@
     padding-bottom: 3rem;
     .containerSkills{
         // background-color: tan;
+        margin-top: 2rem;
         width: 90%;
         .containerSkill{
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             height: 1.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             text-align: right;
             // background-color: turquoise;
             .containerVar{
@@ -31,7 +33,7 @@
                     // width: ;
                 }
                 .line{
-                    // background-color: #f4f4f4;
+                    background-color: $color-line-skills;
                     height: 10px;
                     margin-bottom: auto;
                     margin-top: auto;
@@ -59,9 +61,6 @@
         // background-color: forestgreen;
         padding-top: 1rem;
         
-    }
-    .line{
-        background-color:$background-color-primary;
     }
     h2, span{
         color: $primary-color;

@@ -1,6 +1,21 @@
 
-{
-    "firstName": "Patsy",
-    "lastName" : "Guerrero",
-    "nickName": "Patsy Guerrero"
-}
+[
+    {
+        "firstName": "Patsy",
+        "lastName" : "Guerrero",
+        "nickName": "Patsy Guerrero",
+        "homeDescription": " I am a person passionate about web development and graphic design who always seek to innovate in the creation of digital products to provide a good user experience.",
+        "firstAboutDescription": "One of my great passions has been graphic design and technology. A year ago I decided to join these two branches by starting to study programming in a Henry's bootcamp to accelerate the process that I became a fullstack developer.",
+        "secondAboutDescription": "In four months I have been able to create digital projects where I have been a participant from the conception of the UI design to the development of the product. Among my featured projects are a video game search website and an e-commerce, where I implemented Javascript technologies: React, Redux, Node, Express, PostgreSQL, GraphQL, among others.",
+        "thirdAboutDescription":"I am excited to continue creating digital products that add value to companies and people."
+    },
+    {
+        "firstName": "Patsy",
+        "lastName" : "Guerrero",
+        "nickName": "Patsy Guerrero",
+        "homeDescription": "Soy una persona apasionada por el desarrollo web y diseño gráfico que buscan siempre innovar en la creación de productos digitales para brindar una buena experiencia de usuario.",
+        "firstAboutDescription": "Uno de mis grandes pasiones ha sido el diseño gráfico y la tecnología. Hace un año decidi unir estas dos ramas comenzando a estudiar programación en un Henry´s bootcamp para acelerar el proceso que me convirtiera en desarrolladora fullstack.",
+        "secondAboutDescription": "En cuatro meses he podido crear proyectos digitales donde he sido participe desde la concepción del diseño UI hasta el desarrollo del producto,. Entre mis proyectos destacados se encuentran un sitio web para búsqueda de videojuegos y un e-commerce, donde implementé las tecnologías de Javascript: React, Redux, Node, Express, PostgreSQL, GraphQL, entre otras. ",
+        "thirdAboutDescription":"Estoy entusiasmada por seguir creando productos digitales que aporten valor a las empresas y a las personas."
+    }
+]
