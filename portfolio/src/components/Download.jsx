@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Download.module.scss';
 
-const Download = ({ state }) => {
+const Download = () => {
     return (
         <div className={styles.containerDownload}>
-            <a href= {state? './PatsyGuerrero.pdf':'./PatsyGuerrero.pdf'} download>{state ? 'Download CV': 'Descargar CV'}</a>
+            <a require href={require(`./PATSY_GUERRERO.pdf`).default} download  >Download CV</a>
         </div>
     );
-}; 
+};
 
-export default Download
+export default Download;
