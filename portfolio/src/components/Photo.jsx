@@ -8,7 +8,6 @@ const Photo = ({ state }) => {
         <>
         <div className={styles.container}>
             <div className={styles.photoContainer}>
-                {/* <div className={styles.photo}>hola</div> */}
                 <img src={img} alt="" className={styles.photo}  width="25vw" height="40vw"/>
                     <Download state={state} />
             </div>

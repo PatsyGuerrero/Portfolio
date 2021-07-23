@@ -1,4 +1,3 @@
-//@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
 @import "../sassVariables/variables.scss";
 
 .container{
@@ -20,9 +19,7 @@
 
 @media (max-width: (map-get($breakpoints, medium ))-1) {
     .container{
-        // background-color: rgb(10, 13, 20);
         width: 95vw;
-        // min-height: ;
         height: fit-content;
         text-align: left;
         padding-left: $padding-base-mobile;
@@ -37,12 +34,10 @@
         }
     
         .elements{
-            // background-color: red;
             display: flex;
             justify-content: flex-start; 
             align-items: flex-start;
             flex-direction: column;
-            // margin-left: $padding-base-mobile;
             margin-right: 1.5rem;
             margin-top: 0.1rem;
     
@@ -52,7 +47,6 @@
             }
     
             .line {
-                //width: 0.5rem;
                 height: 3.5rem;                  
             }
     
@@ -69,37 +63,30 @@
 @media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1) {
 
     .container{
-        // background-color:#5068d1;
         width: $width-min-medium;
         height: fit-content;
         text-align: left;
         padding-left: $padding-base-medium; 
         .iconos{
-            // background-color: plum;
             display:block;
-            // justify-content: center;
             width: 100%;
             height: fit-content;
-            //background-color: #003333;
             margin-left: -$padding-base-medium;
             padding-right: $padding-base-medium;
             background-color: $primary-color;
         }
     
         .elements{
-            // background-color: red;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            // margin-left: 3rem;
             margin-right: 3rem;
             margin-top: 3rem;
     
             h1{
                 font-family: 'Crimson Pro', serif;
                 font-size: 3rem;
-                // color:#003333 ;
             }
     
             .line {
@@ -119,8 +106,6 @@
 @media (min-width: (map-get($breakpoints, large))) {
     .container{
         width: $width-min-medium;
-        // width: 110%;
-        // display: flex;
         height: fit-content;
         text-align: left;
         padding-left: $padding-base-large;
@@ -137,7 +122,6 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            // margin-left: 5rem;
             margin-right: 5rem;
             margin-top: 3rem;
 

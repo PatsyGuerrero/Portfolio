@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.scss';
 import { GrLinkedinOption } from 'react-icons/gr';
-import {FaGithub, FaFreeCodeCamp} from 'react-icons/fa';
+import {FaGithub, FaFreeCodeCamp,FaDribbble} from 'react-icons/fa';
 import { RiMenuFoldFill} from 'react-icons/ri';
 import personalData from '../personalData.json';
 import Language from './Language';
@@ -14,23 +14,20 @@ const icon = (ic) => {
 const Navbar = ({ state, setState }) => {
     let sections = ['Home', 'About', 'Skills', 'Experience', 'Contact', 'Portfolio']
     , redes = [
-        {name: icon(<GrLinkedinOption className={styles.icon}/>), link: 'https://www.linkedin.com/in/franciscotov/'}, 
-        {name: icon(<FaGithub className={styles.icon}/>), link: 'https://github.com/franciscotov'},
-        {name: icon(<FaFreeCodeCamp className={styles.icon}/>), link: 'https://www.freecodecamp.org/franciscotov'},
-        // {name: 'Free', link: 'https://www.freecodecamp.org/franciscotov'},
-        // {name: 'Free', link: 'https://www.freecodecamp.org/franciscotov'}
+        {name: icon(<GrLinkedinOption className={styles.icon}/>), link: 'https://www.linkedin.com/in/patsy-guerrero/'}, 
+        {name: icon(<FaGithub className={styles.icon}/>), link: 'https://github.com/PatsyGuerrero'},
+        {name: icon(<FaFreeCodeCamp className={styles.icon}/>), link: 'https://www.freecodecamp.org/patsyguerrero'},
+        {name: icon(<FaDribbble className={styles.icon}/>), link: 'https://dribbble.com/IchBinPatsy'},
     ];
 
     const [active, setActive] = useState(false);
 
     const eventHandler = (e, index) => {
         e.preventDefault();
-        //setActive(index);
         active? setActive(false):setActive(true); 
     }
     const handlerMenuSelected = (e, name) => {
         e.preventDefault();
-        // console.log(name, 'ettetete');
         window.location.href = window.location.origin + `/#${name}`
         setActive(false);
     }
@@ -46,9 +43,7 @@ const Navbar = ({ state, setState }) => {
                         onClick={(e) => eventHandler(e)}
                         className={active ? `${styles.active}` : `${styles.inactive}`}
                         aria-expanded={active ? 'true' : 'false'}
-                        // aria-controls={'sect-' + indexCount(index)}
                         aria-disabled={active? 'true' : 'false'}
-                        // tabIndex={indexCount(index)}
                     >
                         <span className={styles.titlewrapper}>
                             {!active ? <RiMenuFoldFill className={styles.minus}/>: 
@@ -56,8 +51,6 @@ const Navbar = ({ state, setState }) => {
                         </span>
                     </button>
                 </div>
-                {/* <div className={active ? styles.open: styles.close} className={styles.socialMenu}> */}
-                {/* <div  className={styles.containerAcor}> */}
                 <div className={active ? `${styles.containerAcor} ${styles.open}` : styles.containerAcor}>
                     <div > 
                         <Language state={state} setState={setState}/>

@@ -1,13 +1,11 @@
 @import "../sassVariables/variables.scss";
 
 .container{
-    // background-color: cadetblue;
     width: 100%;
 }
 
 @media (max-width: (map-get($breakpoints, small ))-1){
     .container{
-        // background-color: red;
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
@@ -15,7 +13,7 @@
         align-items: center;
         text-align: left;
         .containerImg{
-            // background-color: violet;
+            
             width: fit-content;
             height: fit-content;
             display: flex;
@@ -24,13 +22,13 @@
             align-items: center;
             margin-bottom: 1rem;
             .images{
-                // background-color: black;
+                
                 margin-top: 1.5rem;
                 width: 8rem;
                 height: 8rem;
             }
             .description{
-                // background-color: blue;
+                
                 margin-top: 6px;
                 font-size: 0.7rem;
                 letter-spacing: 3px;
@@ -51,7 +49,6 @@
         text-align: left;
         padding-bottom: 2rem;
         .containerImg{
-            // background-color: violet;
             width: fit-content;
             height: fit-content;
             display: flex;
@@ -61,13 +58,11 @@
             margin-right: 2rem;
             align-items: center;
             .images{
-                // background-color: black;
                 margin-top: 1.5rem;
                 width: 8.5rem;
                 height: 8rem;
             }
             .description{
-                // background-color: blue;
                 margin-top: 6px;
                 font-size: 0.7rem;
                 letter-spacing: 3px;
@@ -78,7 +73,6 @@
 
 @media (min-width: (map-get($breakpoints, large))) {
     .container{
-        // background-color: blue;
         height: 100%;
         display: flex;
         margin: auto;
@@ -87,7 +81,6 @@
         text-align: left;
         margin-left: $padding-base-mobile;
         .containerImg{
-            // background-color: brown;
             width: fit-content;
             height: fit-content;
             display: flex;
@@ -97,14 +90,12 @@
             margin-right: 2rem;
             align-items: center;
             .images{
-                // background-color: black;
                 width: 11vw;
                 max-width: 9.5rem;
                 height: 11vw;
                 max-height: 9.5rem;
             }
             .description{
-                // background-color: blue;
                 margin-top: 6px;
                 font-size: 0.7rem;
                 letter-spacing: 3px;

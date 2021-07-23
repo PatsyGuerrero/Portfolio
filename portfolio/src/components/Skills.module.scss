@@ -7,7 +7,6 @@
     padding-left: $padding-base-mobile; 
     padding-bottom: 3rem;
     .containerSkills{
-        // background-color: tan;
         margin-top: 2rem;
         width: 90%;
         .containerSkill{
@@ -17,20 +16,15 @@
             height: 1.5rem;
             margin-bottom: 2rem;
             text-align: right;
-            // background-color: turquoise;
             .containerVar{
-                // width: 40rem;
-                // background-color: brown;
                 width: 80%;
                 height: 100%;
                 display: flex;
                 flex-wrap: wrap;
                 .skillPercentage{
-                    // background-color: $color-skills-percentage;
                     max-height: 100%;
                     display: flex;
                     align-items: center;
-                    // width: ;
                 }
                 .line{
                     background-color: $color-line-skills;
@@ -47,7 +41,6 @@
                 text-align: end;
                 align-self: flex-end;
                 width: 20%;
-                // max-width: 2rem;
                 font-size: 1.8rem; 
             }
         }
@@ -58,7 +51,6 @@
         margin: 0 0 1rem 0;
     }
     .containerTitle{
-        // background-color: forestgreen;
         padding-top: 1rem;
         
     }
@@ -83,7 +75,6 @@
 
 @media (min-width: (map-get($breakpoints, medium))) and (max-width: (map-get($breakpoints, large))-1) {
     .container{
-        // background-color: tomato;
         width: $width-min-medium;
         padding-left: $padding-base-medium;
         .vl {
@@ -94,7 +85,6 @@
 
 @media (min-width: (map-get($breakpoints, large))) {
     .container{
-        // background-color: tomato;
         width: $width-min-medium;
         padding-left: $padding-base-large;
         .vl {

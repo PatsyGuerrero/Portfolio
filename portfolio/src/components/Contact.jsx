@@ -1,14 +1,10 @@
-//require("dotenv").config();
 import React from 'react';
 import styles from './Contact.module.scss';
 import emailjs from 'emailjs-com';
 
-//const { YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_USER_ID } = process.env;
-
 
 const Contact = ({ state }) => {
     let msg = state? 'If you think I can add value to your team, you can leave me a message and we will schedule a meeting': 'Si crees que puedo sumar valor a tu equipo, puedes dejarme un mensaje y agendarémos una reunión';
-    //console.log('hola', YOUR_SERVICE_ID);
     function sendEmail(e) {
         e.preventDefault();
         emailjs.sendForm('service_5ni45qh', 'template_8c513xp', e.target, 'user_SicT46dRo0IkFNAR0rnUC')

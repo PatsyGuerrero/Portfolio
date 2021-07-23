@@ -4,9 +4,8 @@ const Skills = ({ state }) => {
     // debe agregar a mano las habilidades con el formato siguiente
     let skills = [
         { name: state ? 'Web Development': 'Desarrollo Web', percentage: 80 },
+        { name: state ? 'Design': 'Diseño', percentage: 95 },
         { name: state ? 'Algorithms': 'Algoritmos', percentage: 85 }, 
-        { name: state ? 'Electonics': 'Electrónica', percentage: 70 },
-        { name: state ? 'Teaching': 'Enseñanza', percentage: 80 },
         { name: state ? 'Teamwork': 'Trabajo en equipo', percentage: 100 },
         { name: state ? 'Leadership': 'Liderazgo', percentage: 70 },
     ];
@@ -23,7 +22,6 @@ const Skills = ({ state }) => {
                     {skills.map((ele) => {
                         return <div width = '100%' className={styles.containerSkill}>
                             <div className={styles.containerVar}>
-                                {/* <span className={styles.skillName}>{ele.name.toLocaleUpperCase()}</span> */}
                                 <div style={{width: `${ele.percentage}%`}} className={styles.skillPercentage}>{ele.name.toLocaleUpperCase()}</div>
                                 <div style={{width: `${100 - ele.percentage}%`}} className={styles.line}></div>
                             </div>

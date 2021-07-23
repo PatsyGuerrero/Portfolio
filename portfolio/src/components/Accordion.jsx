@@ -10,7 +10,6 @@ const Accordion = ({ state }) => {
 
     const eventHandler = (e, index) => {
         e.preventDefault();
-        //setActive(index);
         active === index ? setActive(''):setActive(index);
     }
 

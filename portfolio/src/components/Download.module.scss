@@ -1,7 +1,6 @@
 @import "../sassVariables/variables.scss";
 
 .containerDownload{
-    // background-color: blue;
     padding-top: 1rem;
     text-align: start;
     letter-spacing: 5px;
@@ -17,7 +16,6 @@
     .containerDownload{
         text-align: center;
         background-color: $background-color-navbar;
-        // background-color: brown;
         a{
             color: $primary-color;
         }

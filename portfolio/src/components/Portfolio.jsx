@@ -20,10 +20,7 @@ const Portfolio = ({ state }) => {
                         <span className={styles.description}>{e.description}</span>
                     </div>
                </div>
-              
-                   {/* <img src={require(`./${e.img}`).default}  alt="no se encuentra"  /> */}
-
-                   {/* {typeof `e.img` } */}
+            
                 { e.img !== ""?
                     <div className={styles.imagen}>
                     <img src={require(`../assets/img/${e.img}`).default}  alt="no se encuentra"  />

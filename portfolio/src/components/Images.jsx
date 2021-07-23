@@ -4,9 +4,9 @@ import styles from './Images.module.scss';
 const Images = ({ state }) => {
     let listOfImages = [
         {description: state ? 'development': 'desarrollo', img: 'web_development.png'},
-        {description: state ? 'sports': 'deportes', img: 'sports.png'},
+        {description: state ? 'design' : 'diseño', img: 'design.png'},
         {description: 'responsive', img: 'responsive.png'},
-        {description: state ? 'science' : 'ciencias', img: 'atom.png'}
+        {description: state ? 'sports': 'deportes', img: 'sports.png'}  
     ]
     
     return (

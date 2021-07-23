@@ -19,7 +19,6 @@
     width: 100%;
     text-align: left;
     color: $primary-color;
-    // color: red;
     font-weight: bold;
     margin-top: 0.5rem;
     padding: 1rem;
@@ -53,20 +52,16 @@
   }
 
   button.active {
-    //background-color: #dfbd85;
+    
     color: red;
-    // color: red;
     border: #dfbd85 solid 1px;
   }
   
   button:hover {
-      //background-color: #dfbd85;
       cursor: pointer;
   }
   
   .panelclose { 
-    //background: #e0e0e0;
-    // color: #003333;
     box-sizing: border-box;
     padding: 0.5rem 1rem 0 1rem;
     opacity: 0;
@@ -79,7 +74,6 @@
   
   .panelopen {
     overflow: hidden;
-    // background:none;
     padding: 1rem;
     margin-bottom: 1rem;
     box-sizing: border-box;

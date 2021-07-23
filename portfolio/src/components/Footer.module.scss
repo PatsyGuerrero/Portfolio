@@ -3,17 +3,13 @@
 .container{
     z-index: 2;
     background-color: $background-color-primary;
-    // background-color: green;
 }
 @media (max-width: (map-get($breakpoints, medium))-1) {
 
     .container{
-        // background-color: red;
         display: flex;
         padding-left: $padding-base-mobile;
         width: 100vw;
-        // width: 110%;
-        // display: flex;
         height: $height-footer;
         text-align: left;
         justify-content: center;
@@ -24,21 +20,12 @@
             width: 70%;
             justify-content: space-around; 
             align-items: flex-start;
-           
-            
-            // margin-left: $padding-base-mobile;
             height: fit-content;
-            //margin-right: 4.5rem;
             margin-top: 1rem;
-            //margin-bottom: 1rem;
-           //background-color: blueviolet;
 
             .icon{
                 width: 1.8rem;
                 height: 1.8rem;
-                //margin-left: 0.5rem;
-               // padding-left: 0.5rem;
-                //background-color: blueviolet;
 
                 .size{
                     width: 100%;
@@ -47,13 +34,12 @@
                 }
 
                 .size:hover{
-                    color: #114e53;
+                    color: $hover-footer;
                 }   
             }      
         }
 
         .copyright{
-            //background-color: chartreuse;
             padding-top: 0.5rem;
         }
     }
@@ -65,8 +51,6 @@
     .container{
         display: flex;
         width: 100vw;
-        // width: 110%;
-        // display: flex;
         height: $height-footer;
         text-align: left;
         justify-content: center;
@@ -79,14 +63,10 @@
             justify-content: space-around; 
             align-items: flex-start;
             height: fit-content;
-            //margin-right: 4.5rem;
             margin-top: 1rem;
             .icon{
                 width: 1.8rem;
                 height: 1.8rem;
-                //margin-left: 0.5rem;
-               // padding-left: 0.5rem;
-                //background-color: blueviolet;
 
                 .size{
                     width: 100%;
@@ -95,13 +75,12 @@
                 }
 
                 .size:hover{
-                    color: #114e53;
+                    color: $hover-footer;
                 }   
             }      
         }
 
         .copyright{
-            //background-color: chartreuse;
             padding-top: 0.5rem;
         }
     }
@@ -112,8 +91,6 @@
     .container{
         display: flex;
         width: 100vw;
-        // width: 110%;
-        // display: flex;
         height: $height-footer;
         text-align: left;
         justify-content: center;
@@ -144,7 +121,6 @@
         }
 
         .copyright{
-            //background-color: chartreuse;
             padding-top: 0.5rem;
         }
     }
